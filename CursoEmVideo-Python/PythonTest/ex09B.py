@@ -59,3 +59,4 @@ print(frase2.lstrip())
 
 # Remove os espaços excedentes entre os polos Esquerdo e Direito da frase:
 print(frase2.strip())
+
