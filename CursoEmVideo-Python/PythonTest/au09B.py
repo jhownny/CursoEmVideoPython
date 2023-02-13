@@ -19,7 +19,7 @@ print(frase.count('o,0,13'))
 print(frase.find('deo'))
 
 # Existe a palavra Curso em frase?
-print('curso'in frase)
+print('Curso'in frase)
 
 # substitui strings apresentadas para strings solicitadas:
 print(frase.replace('Python', 'Android'))

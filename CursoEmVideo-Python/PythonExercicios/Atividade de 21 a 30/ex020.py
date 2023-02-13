@@ -8,7 +8,7 @@ num = int(input('digite um numero de 0 a 9999\n: '))
 # num3: substitui os espaços por ";"
 # num3.split(";"): substitui as ";" por espaçamento separando os numeros por unidade
 
-if num <= 9:
+if num >= 0 and num <= 9:
     print(f'O numero {num} é uma Unidade. ')
 
 elif num >= 10 and num <= 99:
@@ -42,3 +42,5 @@ elif num >= 1000 and num <= 9999:
             f'O Numero {dnum} é uma Dezena\n'
             f'O Numero {unum} é uma Unidade')
 
+else:
+    print(f'parece que "{num}" não atende aos requisitos solicitados.')
