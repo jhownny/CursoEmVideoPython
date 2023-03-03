@@ -14,11 +14,11 @@ escolha = int(input('Me informe a conversão que deseja fazer\n'
                     '(3) para\033[1;33m Hexadecimal\033[m\n:'))
 
 if escolha == 1:
-    print(f'{bin(n)}')
+    print(bin(n)[2::1])
 elif escolha == 2:
-    print(f'{oct(n)}')
+    print(oct(n)[2::1])
 elif escolha == 3:
-    print(f'{hex(n)}')
+    print(hex(n)[2::1])
 else:
     print('---------------------------------------------------------------')
     print(f'\033[1;31m ERRO, dados informados não coincidem {escolha} não é um formato aceito! ')

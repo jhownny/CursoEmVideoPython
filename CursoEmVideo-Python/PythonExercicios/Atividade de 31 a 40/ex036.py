@@ -7,3 +7,16 @@
 #
 # Seu programa também deverá mostrar o
 # tempo que falto ou que passou do prazo.
+
+from datetime import datetime
+
+data_atual = datetime.now()
+ano = int(input('Informe o ano de seu nascimento:'))
+idade = data_atual.year - ano
+
+if idade >= 19:
+    print(f'Ja passou do tempo de se alistar! Parece que era para você ter se alistado a {idade-18} anos')
+elif idade <= 17:
+    print(f'Você ainda vai se alistar! Falta {(idade+18)-18} anos para você se alistar.')
+else:
+    print(f'Parece que você já pode se alistar.')

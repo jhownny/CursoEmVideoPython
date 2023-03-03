@@ -8,3 +8,19 @@
 # Até 19 anos:JUNIOR
 # Até 20 anos:SÊNIOR
 # Acima:MASTER
+
+from datetime import datetime
+data_atual = datetime.now()
+ano = int(input('Digite o ano de nascimento do Atleta:'))
+idade = data_atual.year - ano
+
+if idade <= 9:
+    print('MIRIN')
+elif idade <= 14 and idade >= 10:
+    print('INFANTIL')
+elif idade <= 19 and idade >=15:
+    print('JUNIOR')
+elif idade == 20:
+    print('SÊNIOR')
+else:
+    print('MASTER')
