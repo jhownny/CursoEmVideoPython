@@ -7,3 +7,5 @@
 # A TORRE DA DERROTA
 # O LOBO AMA O BOLO
 # ANOTARAM A DATA DA MARATONA
+
+# _____________________________ NÃO FEITO POR FALTA DE CONHECIMENTO ________________________________________

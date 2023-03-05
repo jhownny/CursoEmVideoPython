@@ -3,3 +3,5 @@
 #
 # No final, mostre quantas pessoas ainda
 # não atingiram a maioridade e quantas já são maiores.
+
+# _____________________________ NÃO FEITO POR FALTA DE CONHECIMENTO ________________________________________
