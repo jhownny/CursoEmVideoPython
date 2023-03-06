@@ -4,3 +4,17 @@
 
 # _____________________________ NÃO FEITO POR FALTA DE CONHECIMENTO ________________________________________
 
+num = int(input('Digite um número: '))
+tot = 0
+for c in range(1, num + 1):
+    if num % c == 0:
+        print(end='')
+        tot +=1
+    else:
+        print(end='')
+    print(end=f'{c}')
+print(f'O numero {num} foi divisivel {tot} vezes.')
+if tot == 2:
+    print('E por isso ele é primo!')
+else:
+    print('E por isso ele não é primo!')

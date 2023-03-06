@@ -1,6 +1,6 @@
-# Desafio 049 - Refaça o DESAFIO 009, mostrando a
-# tabuada de um número que o usuário escolher,
-# só que agora utilizando um laço for.
+# Desafio 049 — Refaça o DESAFIO 009, mostrando a
+# tabuada de um número que o utilizador escolher,
+# entretanto, utilizando agora um laço for.
 
 s = 0
 n = int(input('Digite um valor para tabuada: '))
