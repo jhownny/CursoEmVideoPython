@@ -1,1 +1,1 @@
-# Desafio 067 -
+# Desafio 067 - Faça um programa que mostre a tabuada de vários números, um de cada vez, para cada valor digitados pelo usuári. O programa será interronpido qunado o número solicitado for negativo.

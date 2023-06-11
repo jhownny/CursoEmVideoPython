@@ -1,1 +1,1 @@
-# Desafio 068 -
+# Desafio 068 - Faça um programa que jogue par ou IMpar com o computador. O jogo só será Interrompido qunado o JOgador PERDER, mostranto o total de vitórias consecutivas que ele conquistou no final do jogo.
