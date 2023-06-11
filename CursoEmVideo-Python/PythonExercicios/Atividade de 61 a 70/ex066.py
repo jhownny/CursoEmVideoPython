@@ -5,3 +5,10 @@
 # A) Qunatas pessoas tem mais de 18 anos.
 # B) Quantos homens foram cadastrados.
 # C) Quantas mulheres tem menos de 20 anos.
+
+sexo = ""
+idade = 0
+
+while True:
+    sexo = str.upper(input('Digite seu Sexo (Masculino ou Feminino): '))
+    
