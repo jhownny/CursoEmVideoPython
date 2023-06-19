@@ -44,3 +44,5 @@ cont_regresiva = 0
 
 
 print(f'\nCom o saque de R${v:.2f} o caixa irá te entregar:\n{lista[0]} nota(s) de R$50.00, \n{lista[1]} nota(s) de R$20.00, \n{lista[2]} nota(s) de R$10.00, \n{lista[3]} nota(s) de R$1.00.')
+
+# Ultimo exercicio do capitulo 15
