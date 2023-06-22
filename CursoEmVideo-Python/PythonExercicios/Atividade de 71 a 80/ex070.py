@@ -9,7 +9,7 @@
 # D) Em que posição na tabela está o time da Chapecoense.
 
 cont = 0
-tupla = ('São Paulo','Palmeiras', 'Corinthians', 'São Bernado', 'Chapecoense', 'Fluminense', 'Tocantins', 'Minas Gerais', 'Bahia', 'Hsdgsfg',     'Ghdhdg', 'Ghdghdf', 'Fghdfgh', 'Gdhgfhfd', 'Reyjejj', 'Jhfdhjfghj', 'Alabama', 'Dghdhgdh', 'Beybety', 'Gdfhghd' )
+tupla = ('São Paulo','Palmeiras', 'Corinthians', 'São Bernado', 'Chapecoense', 'Fluminense', 'Tocantins', 'Minas Gerais', 'Bahia', 'Hsdgsfg', 'Ghdhdg', 'Ghdghdf', 'Fghdfgh', 'Gdhgfhfd', 'Reyjejj', 'Jhfdhjfghj', 'Alabama', 'Dghdhgdh', 'Beybety', 'Gdfhghd' )
 tuplaAlpha = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',)
 print(f'Os primeiros 5 colocados no campeonato Brasileiro de Futebol são:')
 
