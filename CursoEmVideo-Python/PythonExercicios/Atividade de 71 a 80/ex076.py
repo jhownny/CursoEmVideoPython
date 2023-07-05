@@ -11,8 +11,6 @@ while True:
 
     numero = int(input(f'Digite o {cont+1}° numero: '))
     l.append(numero)
-    
-    if numero 
 
     if contnua == 9:
         pergunta = str.upper(input(f'Você já colocou {cont+1} números, deseja continuar? (S/N): '))
