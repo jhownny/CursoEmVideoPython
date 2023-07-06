@@ -23,7 +23,7 @@ for c in range(1, 8):
     # Se a Idade for maior ou igual a 18 ela será adicionada mais '1' a variavel "totalmaior".
     if idade >= 18:
         totalmaior += 1
-    # Senão Será adicionada Menos '1' a variavel "totalmenor". 
+    # Senão Será adicionada Mais '1' a variavel "totalmenor". 
     else:
         totalmenor += 1
 
