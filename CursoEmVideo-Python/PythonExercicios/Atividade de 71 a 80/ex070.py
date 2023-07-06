@@ -16,11 +16,11 @@ tupla = ('Botafogo','Grêmio', 'Flamengo', 'Palmeiras', 'Red Bull Bragantino',
 
 tuplaAlpha = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',)
 
-print(f'Os primeiros 5 colocados no campeonato Brasileiro de Futebol são:\n')
+print('Os primeiros 5 colocados no campeonato Brasileiro de Futebol são:\n')
 
 while cont <= 4:
-        print(f'{tupla[cont]}, em {cont+1}° lugar na colocação.')
-        cont+=1
+    print(f'{tupla[cont]}, em {cont+1}° lugar na colocação.')
+    cont+=1
     
 print('=~' * 15)
 
