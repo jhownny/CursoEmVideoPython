@@ -9,5 +9,5 @@ m = an + (10-1)*r
 cont = 0
 
 while an != m:
-    print('{}'.format(), end='→')
+    print('{}'.format(m), end='→')
     cont += 1
