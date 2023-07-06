@@ -3,4 +3,8 @@
 # deverá analisar se a expressão passada está com os 
 # parênteses abertos e feçados na ordem correta.
 
+exp = str(input('Digite a expresão: '))
+
+
+
 # Ultimo exercicio do capitulo 17
