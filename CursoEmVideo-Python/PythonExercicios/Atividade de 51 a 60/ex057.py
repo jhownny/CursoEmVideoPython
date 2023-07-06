@@ -4,10 +4,12 @@
 #5! = 5 x 4 x 3 x 2 x 1 = 120
 n = int(input('Digite um numero: '))
 s = n
-while s != 0:
+while True :
+    if s == 0:
+        break
+    print(f'{s}',end=' x ')
 
-    print('{}'.format(s), end=' x ')
     s -= 1
-print(s * n)
+
 
 
