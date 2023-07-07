@@ -16,12 +16,11 @@ while True:
         pergunta = str.upper(input(f'Você já colocou {cont+1} números, deseja continuar? (S/N): '))
         contnua = 0
 
-        if pergunta == 'N':
+        if pergunta == 'N' or pergunta == 'NÃO':
             break
     cont += 1
     contnua += 1
     l.sort()
-for conta in range(0, len(l)):
-    print(l[conta])
+
 
 print(l)

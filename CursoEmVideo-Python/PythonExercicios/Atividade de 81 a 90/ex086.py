@@ -4,4 +4,19 @@
 # permita que o usuário possa mostrar as notas de cada aluno 
 # individualmente
 
+
+
+# Assim que o resultado deve se apresentar: 
+#
+# No.   Nome    Média
+#----------------
+# 0     pedro   5.8   
+# 1     maria   8.0
+#
+#Mostrar nota de qual aluno? (999 interrompe): [colocar o numero corespondente ao aluno ex: 1]
+#
+# Notas de maria são [9.5, 6.5]
+
+
+
 # Ultimo exercicio do capitulo 18

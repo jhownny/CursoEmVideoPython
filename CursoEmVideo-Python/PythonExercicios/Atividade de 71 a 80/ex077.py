@@ -12,7 +12,7 @@ while cont < 5:
 
     for c in l_Valor:
         if cont == 0:
-            l_Valor.append(v)
+            l_Valor[0] = v
         elif v >= l_Valor[c]:
             l_Valor.insert(0, v)
         elif v <= l_Valor[c]:
