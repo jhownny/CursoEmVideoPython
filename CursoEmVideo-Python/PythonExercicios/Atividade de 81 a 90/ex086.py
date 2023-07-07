@@ -19,4 +19,4 @@
 
 
 
-# Ultimo exercicio do capitulo 18
+# Ultimo exercicio do capitulo 17(2.0)

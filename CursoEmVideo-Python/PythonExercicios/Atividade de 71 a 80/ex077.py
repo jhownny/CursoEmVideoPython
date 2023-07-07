@@ -17,6 +17,5 @@ while cont < 5:
             l_Valor.insert(0, v)
         elif v <= l_Valor[c]:
             l_Valor.insert(-1, v)
-
     cont+=1
 print(l_Valor)

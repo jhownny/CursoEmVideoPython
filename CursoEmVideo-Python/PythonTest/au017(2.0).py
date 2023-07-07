@@ -12,15 +12,15 @@
 
 #===============================
 
-#galera = [[],[],[],[]]
-#print(galera)
-#print(galera[0])
-#print(galera[0,0])
-#print(galera[2][1])
+galera = [['jhonata', 19],['pedro', 5],['paula', 346],['jaimundolynson', 9]]
+print(galera)
+print(galera[0])
+print(galera[0][0])
+print(galera[2][1])
 
 #===============================
 
-#galera = [[],[],[],[]]
+#galera = [['jhonata', 19],['pedro', 5],['paula', 346],['jaimundolynson', 9]]
 #for p in galera:
 #    print(f'{p[0]} tem {p[1]} anos de idade.')
 
@@ -33,7 +33,7 @@
 #    dado.append(str(input('Idade: ')))
 #    galera.append(dado[:]) #<--- O "[:]" é copia de uma lista para outra sem necessariamente modifica-lá (Copia limpa.)
 #    dado.clear()
-
+#
 #print(f'{galera}')
 
 #=================================

@@ -2,8 +2,9 @@
 
 #num = [2,5,9,1]
 #num[2] = 3
-#
 #num.append(7)
+#
+##inverte a ordem dos numeros organizados de, do menor para o maior/ maior para o menor
 #num.sort(reverse=True)
 #
 #print(num)
@@ -16,7 +17,8 @@
 #num.append(7)
 #num.sort(reverse=True)
 #
-#num.insert(2.0)
+## insere o valor exigido na posição solicitada.
+#num.insert(2,0)
 #
 #print(num)
 #print(f'Essa lista tem {len(num)} elementos.')
@@ -27,8 +29,9 @@
 #num[2] = 3
 #num.append(7)
 #num.sort(reverse=True)
-#num.insert(2.0)
+#num.insert(2,0)
 #
+## Acho que tira o número expecificado.
 #num.pop(2)
 #
 #print(num)
@@ -40,8 +43,9 @@
 #num[2] = 3
 #num.append(7)
 #num.sort(reverse=True)
-#num.insert(2.2)
+#num.insert(2,2)
 #
+## remove o numero expecificado
 #num.remove(2)
 #
 #print(num)
@@ -56,7 +60,7 @@
 #
 #for c,v in enumerate(valores):
 #    print(f'na posição {c} encontrei o valor {v}!')
-#print('Cheguei ao final da lsita.')
+#print('Cheguei ao final da lista.')
 
 #==============================================
 
