@@ -3,3 +3,29 @@
 # A) A soma de todos os valores pares digitados. 
 # B) A soma dos valores da terceira coluna.
 # C) O maior valor da segunda linha.
+maior = 0
+cont = 0
+l_par = []
+m= [[ ],[ ],[ ],[ ],[ ],[ ],[ ],[ ],[ ]]
+while cont < 9:
+    num = int(input(f'Digite o {cont+1}° número: '))
+
+    m[cont].append(num)
+    if num%2==0:
+        l_par.append(num)
+
+
+    if (m[3]) > (m[4]) or (m[3]) > (m[5]):
+        maior = m[3][0]  
+    elif (m[4]) > (m[3]) or (m[4]) > (m[5]):
+        maior = m[4][0]  
+    elif (m[5]) > (m[4]) or (m[5]) > (m[3]):
+        maior = m[5][0] 
+
+    cont+=1
+
+print(f'\n{m[0]}{m[1]}{m[2]}\n{m[3]}{m[4]}{m[5]}\n{m[6]}{m[7]}{m[8]}\n')
+
+print(f'A soma de todos os valores({l_par}) pares digitados é: {sum(l_par)} ')
+print(f'A soma dos valores presentes na tercera coluna é: {m[2][0] + m[5][0] + m[8][0]}')
+print(f'O maior valor da segunda linha é o  número: {maior}')

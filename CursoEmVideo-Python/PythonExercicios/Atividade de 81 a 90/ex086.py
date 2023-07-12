@@ -4,7 +4,13 @@
 # permita que o usuário possa mostrar as notas de cada aluno 
 # individualmente
 
-
+cont = 0 
+l = [[],[],[]]
+nome = str(input('Digite os eu nome do aluno: '))
+l[0].append(nome)
+nota = float(input(f'Digite a nota do aluno {nome}: '))
+l[1].append(nota)
+print(l)
 
 # Assim que o resultado deve se apresentar: 
 #

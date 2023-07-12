@@ -4,9 +4,19 @@
 # e impares. No final, mostre os valores pares e 
 # impares em ordem crescente.
 
-l_parimp = [[]]
-for v in l_parimp:
-    asg = v
-g = int(input('sdghdghghsg: '))
-asg.append(g)
-print(f'{l_parimp[0]}, {l_parimp}, {asg}')
+cont = 0 
+l = [[],[]]
+while cont < 7:
+    num = int(input(f'Digite o {cont+1}° numero: '))
+    if num%2 == 0:
+        l[0].append(num)
+    else:
+        l[1].append(num)
+    cont+=1
+
+l[1].sort()
+l[0].sort()
+tamanho0 = len(l[0])
+tamanho1 = len(l[1])
+
+print(f'Dos {cont} números digitados, {tamanho0}({l[0]}) são pares e  {tamanho1}({l[1]}) são impares.')
