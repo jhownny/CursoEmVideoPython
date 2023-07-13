@@ -24,7 +24,9 @@ while cont < 9:
 
     cont+=1
 
-print(f'\n{m[0]}{m[1]}{m[2]}\n{m[3]}{m[4]}{m[5]}\n{m[6]}{m[7]}{m[8]}\n')
+print(f'\n{m[0]} \xA0 {m[1]} \xA0 {m[2]}')
+print(f'{m[3]} \xA0 {m[4]} \xA0 {m[5]}')
+print(f'{m[6]} \xA0 {m[7]} \xA0 {m[8]}\n')
 
 print(f'A soma de todos os valores({l_par}) pares digitados é: {sum(l_par)} ')
 print(f'A soma dos valores presentes na tercera coluna é: {m[2][0] + m[5][0] + m[8][0]}')
