@@ -17,5 +17,5 @@ for c in range(0,3):
 
 for i in dado:
     while True:
-        print('O {}° jogador tirou {} no dado. '.format(i['jogador_indice'], i['dado'])) 
+        print(f'O {i["jogador_indice"]}° jogador tirou {i["dado"]} no dado. ') 
         break
