@@ -50,7 +50,7 @@ while cont > (0):
     
 # Terceiro loop, Responsavel por mostrar a primeira e segunda nota de um aluno, escolhida pelo usuario.
 while True:
-    mnota = int(input(f'Mostrar nota de qual aluno? (999 interrompe): '))
+    mnota = int(input('Mostrar nota de qual aluno? (999 interrompe): '))
 
     # loop que percorrerá toda a lista de indice 0 a procura do valor digitado pelo usuario na varivél "mnota".
     for no in l[0]:
