@@ -61,4 +61,4 @@ while True:
     if mnota == 999:
         break
 
-# Ultimo exercicio do capitulo 17(2.0)
+# Ultimo exercicio do capitulo 18 (17_2.0)
