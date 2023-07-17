@@ -4,3 +4,8 @@
 # difrrente de ZERO, o dicionário receberá também o ano 
 # de contratação e o salário, com qunatos anos a pessoa 
 # vai se aposentar. 
+
+nome =str(input('Digite seu nome'))
+idade =int(input('Digite o ano de seu nascimento'))
+CT = int(input('Digite a carteira de trabalho'))
+
