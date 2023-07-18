@@ -11,3 +11,11 @@
 #   o total de gols feitos durante o campeonato.)
 
 # Ultimo exercicio do capitulo 19
+
+
+#
+#
+#
+#
+#
+#

@@ -21,3 +21,8 @@ for j in range(partidas):
     cont+=1
     
 print(jogador)
+
+#base:
+#
+# {'nome': str ,'gols': [(int)] ,'total': (int) }
+#
