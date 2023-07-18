@@ -6,21 +6,21 @@
 # o total de gols feitos durante o campeonato. 
 
 jogador=dict()
-
+lista=list()
 nome = str.title(input('Digite seu nome: '))
 partidas = int(input('Digite a quantidade de partidas jogadas: '))
-
-cont= 0 
-for j in range(partidas):
-    if cont == 0:
-        gol = int(input(f'quantos gols fez na {cont +1}° partida: '))
-        jogador['gols'] = gol
-    else:
-        gol = int(input(f'quantos gols fez na {cont +1}° partida: '))
-        jogador['gols'] = ([gol])    
-    cont+=1
-    
-print(jogador)
+jogador["nome"] = nome
+for i in range(partidas):
+    gol = int(input(f'Digite quantos gols você fez na {i+1}° partida: '))
+    lista.append(gol)
+jogador['gols'] = lista
+total = sum(lista)
+jogador['total'] = total
+print('-=' * 20)
+print(f'{jogador["nome"]} fez um total de {jogador["total"]} gols em {partidas} partidas!')
+print('-=' * 20)
+for c in range(partidas):
+    print(f'{jogador["nome"]} na {c+1}° partida fez {lista[c]} gols!')
 
 #base:
 #

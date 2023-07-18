@@ -11,5 +11,5 @@ A = float(input('Me diga a altura de sua parede em METROS: '))
 
 Ar = (A * 2) + (L * 2)
 
-print("Sabendo que você tem \n{} metros de Largura e \n{} metros de Altura, é necessario comprar"
-      " \n{} Litros de tinta para pintar toda a parede.".format(L, A, Ar))
+print(f"Sabendo que você tem \n{L} metros de Largura e \n{A} metros de Altura, é necessario comprar"
+      f" \n{Ar} Litros de tinta para pintar toda a parede.")
