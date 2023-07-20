@@ -5,7 +5,7 @@
 
 def maior(lista):
     organizado = sorted(lista)
-    print(organizado[-1])
+    print(f'O maior numeros da lista é o: {organizado[-1]}')
         
 
 maior([67,2,84,110,30,6,35,8,94,20])

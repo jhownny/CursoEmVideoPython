@@ -4,7 +4,9 @@
 # permita que o usuário possa mostrar as notas de cada aluno 
 # individualmente
 
-cont = 0 
+cont = 0
+cont_media = 0
+cont_arevolta = 0 
 l = [[],[],[]]
 
 # Loop principal, Resposavel por armazenar os nomes e as notas dentro da lista.
@@ -28,11 +30,8 @@ while True:
     if pergunta == 'N' or pergunta == 'NÃO':
         break
 
-
 print('\nNo.   Nome   Média')
 print('-'*20)
-cont_arevolta = 0
-cont_media = 0
 
 # Segundo loop, Responsavel por mostrar a tabela com os alunos e suas devidas notas e posições. 
 while cont > (0): 
@@ -51,12 +50,11 @@ while cont > (0):
 # Terceiro loop, Responsavel por mostrar a primeira e segunda nota de um aluno, escolhida pelo usuario.
 while True:
     mnota = int(input('Mostrar nota de qual aluno? (999 interrompe): '))
-
     # loop que percorrerá toda a lista de indice 0 a procura do valor digitado pelo usuario na varivél "mnota".
     for no in l[0]:
         if mnota == l[0][no]:
                 print(f'O  Aluno "{l[1][no]}" Tirou {l[2][no+mnota]} na primeira prova e {l[2][no+(mnota+1)]} na segunda ')
-
+               
     # O loop encerrará caso o usuario digite "999".
     if mnota == 999:
         break
