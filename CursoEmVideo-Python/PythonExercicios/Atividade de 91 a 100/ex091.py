@@ -35,7 +35,7 @@ for i in l_pessoas:
         elif cont == 1:
             soma = anterior + i['idade']
         else:
-            soma = soma + i['idade']
+            soma+=i['idade']
         cont+=1
         break
 
@@ -62,4 +62,8 @@ for p in l_pessoas:
             print(f'{p["nome"]},',end=' ')
         break
 
-print('tem a idade acima da média.')
+if p['idade'] > (soma/len(l_pessoas)):
+    print('Não tem a idade acima das médias declaradas!')
+else:
+    print('Tem a idade acima da média.')
+

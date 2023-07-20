@@ -20,8 +20,3 @@ for c in l[cont_a]:
 # Ultimo exercicio do capitulo 17
 
 
-if agfsgsd == '(':
-    if afdfadf == ')':
-        print('dfsgfdgsdfgsf')
-    else:
-        break
