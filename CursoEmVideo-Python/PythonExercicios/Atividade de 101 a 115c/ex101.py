@@ -3,3 +3,6 @@
 # aceitar apenas um valor numérico.
 
 #EX: n = leiaInt('Digite um n')
+
+#n = leiaint('Digite um número')
+#print(f'Você acabou de digitar o número {n}')

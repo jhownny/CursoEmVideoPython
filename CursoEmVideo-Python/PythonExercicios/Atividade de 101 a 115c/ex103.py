@@ -6,3 +6,4 @@
 # Obs:Use Cores
 
 # Ultimo exercicio do capitulo 21
+

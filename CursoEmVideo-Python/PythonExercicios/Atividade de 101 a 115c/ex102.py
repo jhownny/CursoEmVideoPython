@@ -9,3 +9,7 @@
 # - A situação (Opcional)
 
 # Obs: Adicione também as docstrings da função.
+
+#resp = notas(5.5,9.5,6.5,sit=True)
+#print(resp)
+#help(notas)

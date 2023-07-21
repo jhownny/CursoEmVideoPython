@@ -4,13 +4,19 @@
 # parênteses abertos e feçados na ordem correta.
 l = []
 exp = str.upper(input('Digite a expresão: '))
-cont_a = 0
-l.append(exp)
-
-for c in l[cont_a]:
-    
-    print(c)
-    cont_a+=1
+for simb in exp:
+    if simb =='(':
+        l.append('(')
+    elif simb ==')':
+        if len(l) > 0:
+            l.pop()
+        else:
+            l.append(')')
+            break
+if len(l) == 0:
+    print('Sua expressão está correta!')
+else:
+    print('Sua expressão está equivocada!')
 
 
 #for c in exp:

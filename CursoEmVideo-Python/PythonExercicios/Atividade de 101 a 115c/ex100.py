@@ -4,3 +4,9 @@
 
 # O programa deverá ser capaz de mostrar a ficha 
 # do jogador, mesmo que algum dado não tenha sido informado corretamente. 
+
+# Se nome do jogador e a quantidade de gols estiver vazia ira imprimir: 
+#
+# Nome do Jorgador: {vazio} 
+# Número de Gols: {vazio}
+# O jogador <desconhecido> fez 0 gol(s) no campionato.

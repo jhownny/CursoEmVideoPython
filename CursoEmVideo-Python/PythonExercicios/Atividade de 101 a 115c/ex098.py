@@ -3,3 +3,5 @@
 # nascimento de uma pessoa, retornando uma valorliteral 
 # indicando se uma pessoa tem voto NEGADO, OPCIONAL ou 
 # OBRIGATÓRIO nas eleições.
+
+#MAIS DE 65 VOTO OPCIONAL
