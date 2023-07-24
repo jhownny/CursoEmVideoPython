@@ -1,29 +1,16 @@
 
-# Desafio 018 - Faça um programa que
-# leia um ângulo qualquer e mostre na
-# tela o valor do seno, cosseno e tangente
-# desse ângulo.
+# Desafio 015 - Escreva um programa que pergunte a
+# quantidade de Km percorridos por um carro alugado
+# e a quantidade de dias pelos quais ele doi alugado
+# e a quantidade de dias pelos quais ele foi alugado.
+# Calcule o preço a pagar, sabendo que o carro custa
+# R$60 por dia e R$0,15 por Km rodado.
 
-# [import math] ou [from math import radians, sin, cos, tan]
+d = int(input('Quantos dias você ficou com o veículo?'))
+k = float(input('Quantos Km foram rodados com o veículo?'))
 
-import math
+pd = d * 60
+pk = k * 0.15
 
-print('não fiz, não sabia por onde começar. Resolução do codigo a baixo:\n')
 
-an = float(input('Digite o Ângulo que você deseja: '))
-seno = math.sin(math.radians(an))
-# seno = sin(radians(an))
-print(f'O ângulo de {an} tem o SENO de {seno:.2f}')
-cos = math.cos(math.radians(an))
-# cos = cos(radians(an))
-print(f'O ângulo de {an} tem o cosseno de {cos:.2f}')
-tan = math.tan(math.radians(an))
-# tan = tan(radians(an))
-print(f'O ângulo de {an} tem a tangente de {tan:.2f} ')
-
-# Segundo python.org:
-# math.sin(x): Retorna o seno de x radianos.
-# math.radians(x): Converte o ângulo x de graus para radianos.
-# math.tan(x): Retorna o tangente de x radianos.
-# math.cos(x): Retorna o cosseno de x radianos.
-# obs:ajuda pra caramba em! saquei tudo...(ironia)
+print(f'Como você percorreu {k:.2f} Km e ficou com o veículo {d} dias você terá que pagar um total de R${pd + pk:.2f}')

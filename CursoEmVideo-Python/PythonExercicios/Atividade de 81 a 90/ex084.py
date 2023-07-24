@@ -1,33 +1,38 @@
-# Desafio 087 - Aprimore o desafio anterior, mostrando no final:
+# Desafio 084 - Faça um programa que leia nome e peso de várias pessoas, guardando tudo em uma lista. No final, mostre:
 
-# A) A soma de todos os valores pares digitados. 
-# B) A soma dos valores da terceira coluna.
-# C) O maior valor da segunda linha.
-maior = 0
+# A) Quantos pessoas foram cadastradas.
+# B) Uma listagem com as pessoas mais pesadas.
+# C) Uma listagem com as pessoas mais leves.
+
 cont = 0
-l_par = []
-m= [[ ],[ ],[ ],[ ],[ ],[ ],[ ],[ ],[ ]]
-while cont < 9:
-    num = int(input(f'Digite o {cont+1}° número: '))
+# A variável "cont" vai me ajudar a contar a 
+# quantidade de pessoas cadastradas assim ja 
+# atendendo a requisição (A).
 
-    m[cont].append(num)
-    if num%2==0:
-        l_par.append(num)
+peso_anterior = 0
+l_map = []
+l_mep = []
+while True:
 
+    # insersão de resultados nas variaveis "nome" e "peso".
+    nome = str(input(f'Diga o nome da {cont+1}° pessoa: '))
+    peso = float(input(f'Diga o peso da {cont+1}° pessoa: '))
+    
+    if cont == 0:
+        peso_anterior = peso
+        l_mep.append(peso)
+    elif peso > peso_anterior:
+        l_map.append(peso)
+        peso_anterior = peso
+    elif peso < peso_anterior:
+        l_mep.append(peso)
+        peso_anterior = peso
 
-    if (m[3]) > (m[4]) or (m[3]) > (m[5]):
-        maior = m[3][0]  
-    elif (m[4]) > (m[3]) or (m[4]) > (m[5]):
-        maior = m[4][0]  
-    elif (m[5]) > (m[4]) or (m[5]) > (m[3]):
-        maior = m[5][0] 
+    # Caminho para final do código.
+    Again = str.upper(input('Deseja continuar? \n(S/n): '))
+    if Again == 'NÃO' or Again == 'N':
+        break
 
     cont+=1
-
-print(f'\n{m[0]} \xA0 {m[1]} \xA0 {m[2]}')
-print(f'{m[3]} \xA0 {m[4]} \xA0 {m[5]}')
-print(f'{m[6]} \xA0 {m[7]} \xA0 {m[8]}\n')
-
-print(f'A soma de todos os valores({l_par}) pares digitados é: {sum(l_par)} ')
-print(f'A soma dos valores presentes na tercera coluna é: {m[2][0] + m[5][0] + m[8][0]}')
-print(f'O maior valor da segunda linha é o  número: {maior}')
+print('~=' * 21)
+print(f'Foram cadastradas {cont+1} pessoas; \nAs mais pessadas: {l_map:.2f};\nAs mais leves: {l_mep:.2f}.')

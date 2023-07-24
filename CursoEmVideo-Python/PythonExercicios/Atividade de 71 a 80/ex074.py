@@ -1,30 +1,28 @@
-# Desafio 077 - Crie um programa que tenha uma tupla com 
-# várias palavras (não usaracentos). Depois disso, você 
-# deve mostrar, para cada palavra, quais são suas vogais.
+# Desafio 074 - Crie um programa que vai 
+# gerar cinco números aleatórios e 
+# colocar em uma tupla.
 
+# Depois disso, mostre a listagem de 
+# números gerados e também indique o menor 
+# e o maior valor que estão na tupla.
+
+import random
 cont = 0
-palavras = ('macaco', 'cachorro', 'lapis', 'borracha', 'monitor', 'calendario', 'janela', 'antetiguimon', 'uva')
+l = []    
+menor_n = 0
+maior_n = 0
+while cont < 5:
+    aleatorio = random.randrange(1,100)
+    if cont == 0:
+        menor_n = aleatorio
+        maior_n = aleatorio
+    else:
+        if aleatorio < menor_n:
+            menor_n = aleatorio
+        if aleatorio > maior_n:
+            maior_n = aleatorio
+    l.append(aleatorio)
 
-while True:
-    if cont == len(palavras):
-        break
-    listaVogais = []
-    lista = list(palavras)
-    separado = list(lista[cont])
-    for c in separado:
-        if c == 'a':
-            listaVogais.append(c)
-        if c == 'e':
-            listaVogais.append(c)
-        if c == 'i':
-            listaVogais.append(c)
-        if c == 'o':
-            listaVogais.append(c)
-        if c == 'u':
-            listaVogais.append(c)
-    print(f'A palavra "{palavras[cont].capitalize()}" tem as vogais {listaVogais};')
-    if cont == len(palavras):
-        break
     cont+=1
-
-# Ultimo exercicio do capitulo 16
+tupla = tuple(l)
+print(f'A lista de numeros digitados foi {tupla};\nO menor número foi o {menor_n};\nO maior número foi o {maior_n}. ')

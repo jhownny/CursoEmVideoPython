@@ -1,29 +1,12 @@
-# Desafio 075 - Desenvolva um programa que leia 
-# quatro valores pelo teclado e guarde-os em 
-# uma tupla. No final, mostre:
+# Desafio 072 - Crie um programa que tenha uma 
+# tupla totalmente preenchida com uma contagem 
+# por extenso, de zero até vinte.
 
-# A) Quantos vezes apareceu o valor 9.
-# B) Em que posição foi digitado o primeiro valor 3.
-# C) Quais foram os números pares.
+# Seu programa deverá ler um número pelo 
+# teclado (entre 0 e 20) e mostrá-lo por extenso.
 
-onde = []
-l = []
-cont_nove = 0
-cont = 0
-
-while cont < 4:
-    num = int(input(f'Digite o {cont+1}° numero: '))
-    cont+=1
-    
-    if num == 9:
-        cont_nove+=1
-        
-    if num == 3:        
-        onde.append(cont)
-        
-    if num %2 == 0:
-        l.append(num)
-        
-aqui = tuple(onde)
-n = tuple(l)
-print(f'O número nove apareceu {cont_nove} vez(es); \nO primeiro numero 3 foi digtado na {aqui[0]}° posição; \nOs numeros pares digitados foram: {n}.')    
+tupla = (0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21)
+escolha = int(input('Diga um número de 0 a 20: '))
+print('---------------------------------------------------------')
+for c in  range( escolha, tupla[21]):
+    print(f'{c}')

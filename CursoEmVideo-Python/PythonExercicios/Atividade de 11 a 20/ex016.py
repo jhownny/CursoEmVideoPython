@@ -1,13 +1,10 @@
 
-# Desafio 019 - Um professor quer sortear um
-# dos seus quatro alunos para apagar o quadro.
-# Faça um programa que ajude ele, lendo o nome
-# deles e escrevendo o nome do escolhido.
+# Desafio 016 - Crie um programa que leia
+# um número Real qualquer
+# pelo teclado e mostre na
+# tela a sua porção inteira.
 
-import random
+import math
+nun = float(input('digite um numero: '))
 
-nomes1 = 'João','Pedro','Geovana','Cladio'
-
-cha = random.choice(nomes1)
-
-print(cha)
+print(f'O numero{nun} tem a parte inteira {math.ceil(nun)}')

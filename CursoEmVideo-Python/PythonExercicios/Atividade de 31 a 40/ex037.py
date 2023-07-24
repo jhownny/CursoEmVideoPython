@@ -1,20 +1,24 @@
-# Desafio 040 - Crie  um programa que leia duas
-# notas de um aluno e calcule sua média, mostrando
-# uma mensagem no final, de acordo com a média atingida:
+# Desafio 037 - Escreva um programa que
+# leia um número inteiro qualquer e peça
+# para o usuário escolher qual será a base
+# de conversão:
 #
-# Média abaixo de 5.0: REPROVADO
-# Média entre 5.0 E 6.9: RECUPERAÇÃO
-# Média 7.0 ou superior: APROVADO
+# 1 para binário;
+# 2 para octal;
+# 3 para hexadecimal.
 
-n1 = float(input('Digite a \033[1;35mPrimeira\033[m nota do aluno: '))
-n2 = float(input('Digite a \033[1;34mSegunda\033[m nota do aluno: '))
-media = (n1 + n2) / 2
+n = int(input('Digite um numero inteiro qualquer\n:'))
+escolha = int(input('Me informe a conversão que deseja fazer\n'
+                    '(1) para\033[1;35m Binário\033[m\n'
+                    '(2) para\033[1;34m Octal\033[m\n'
+                    '(3) para\033[1;33m Hexadecimal\033[m\n:'))
 
-if media < 5.0:
-    print(f'\nMédia:{media} \nO aluno está \033[1;31mREPROVADO\033[m! ')
-elif media >= 5.0 and media <= 6.9:
-    print(f'\nMédia:{media} \nO aluno está de \033[1;33mRECUPERAÇÃO\033[m!')
-elif media >= 7.0:
-    print(f'\nMédia:{media} \nO aluno está \033[1;32mAPROVADO\033[m!')
+if escolha == 1:
+    print(bin(n)[2::1])
+elif escolha == 2:
+    print(oct(n)[2::1])
+elif escolha == 3:
+    print(hex(n)[2::1])
 else:
-    print(f'Algo deu errado por favor digite novamente \ndados digitados: {n1}, {n2}. ')
+    print('---------------------------------------------------------------')
+    print(f'\033[1;31m ERRO, dados informados não coincidem {escolha} não é um formato aceito! ')

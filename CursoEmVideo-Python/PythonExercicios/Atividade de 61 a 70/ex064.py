@@ -1,15 +1,24 @@
-# Desafio 067 - Faça um programa que mostre a tabuada de vários números, 
-# um de cada vez, para cada valor digitados pelo usuári. O programa será 
-# interronpido qunado o número solicitado for negativo.
+# Desafio 064 - Crie um programa que leia vários
+# números inteiros pelo teclado. O programa só
+# vai parar quando o usuário digitar o valor 999,
+# que é a condição de para da. No final, mostre
+# quantos números foram digitados e qual foi a
+# soma entre eles (Desconsiderando o flag).
+
+n1 = -1
+soma = []
+i = 0
+print('Olá, Bem vindo ao programa de soma.')
+print('Digite o numero "999" se quiser parar de fazer a soma dos valores.\n')
+while n1 != 999: 
 
 
-while True:
-    n = int(input('Digite um numero para tabuada: '))
+    n1 = int(input(f'Digite o {i+1}° numero para a soma: '))
+    i = i+1
+    soma.append(n1)
 
-    if n <= 0:
-        break
-    print('==========================================================')
-    print(f'\n{n} X 1 = {n*1} \n{n} X 2 = {n*2} \n{n} X 3 = {n*3} \n{n} X 4 = {n*4} \n{n} X 5 = {n*5} \n{n} X 6 = {n*6} \n{n} X 7 = {n*7} \n{n} X 8 = {n*8} \n{n} X 9 = {n*9} \n{n} X 10 = {n*10}')
-    print('\n==========================================================')
 
-print(f'\n você digitou {n}? Então é isso que tem pra hoje. \n Tchau!')
+soma_total = sum(soma)
+quant = len(soma)
+
+print(f'\nVocê digitou {quant} numero(s) e a soma dele(s) é de {soma_total}!')

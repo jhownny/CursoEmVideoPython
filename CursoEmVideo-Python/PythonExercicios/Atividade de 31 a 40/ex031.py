@@ -1,21 +1,12 @@
-# Desafio 034 - Escreva um programa
-# que pergunte o salário de um funcionário
-# e calcule o valor do seu aumento.
-#
-# Para salários superiores a
-# R$1.250,00, calcule um aumento de 10%.
-#
-# Para os inferiores ou iguais, o aumento é de 15%.
+# Desafio 031 - Desenvolva um programa que
+# pergunte a distância de uma viagem em Km.
+# Calcule o preço da passagem, cobrando R$0,50
+# por Km para viagens de até 200Km e R$0,45 para
+# viagens mais longas.
 
-salario = float(input('Me diga seu salario, meu nobre\n:'))
+dis = float(input('Quantos quilometros essa viagem vai dar?\n:'))
 
-if salario > 1.250:
-    va = (salario * 0.10)
-    vf = (salario + va)
-    print(f'Você teve um aumento de 10% no seu salario: R${vf:.2f}')
+if dis <= 200.0:
+    print(f'OK, com {dis}Km você ira pagar de passagem: R${dis*0.50:.2f}')
 else:
-    va = (salario * 0.15)
-    vf = (salario + va)
-    print(f'Você teve um aumento de 15% no seu salario: R${vf:.2f}')
-
-
+    print(f'OK, com {dis}Km você ira pagar de passagem: R${dis*0.45:.2f}')

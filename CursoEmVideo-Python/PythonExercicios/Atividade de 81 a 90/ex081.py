@@ -1,38 +1,27 @@
-# Desafio 084 - Faça um programa que leia nome e peso de várias pessoas, guardando tudo em uma lista. No final, mostre:
+# Desafio 081 - Crie um programa que vai ler vários 
+# números e colocar em uma lista. 
+# Depois disso, mostre:
 
-# A) Quantos pessoas foram cadastradas.
-# B) Uma listagem com as pessoas mais pesadas.
-# C) Uma listagem com as pessoas mais leves.
+# A) Quantos números foram digitados.
+# B) A lista de valores, ordednada de forma decrecente.
+# C) Se o valor 5 foi digitado e está ou não na lista.
 
+l = []
 cont = 0
-# A variável "cont" vai me ajudar a contar a 
-# quantidade de pessoas cadastradas assim ja 
-# atendendo a requisição (A).
-
-peso_anterior = 0
-l_map = []
-l_mep = []
+contnua = 0
 while True:
 
-    # insersão de resultados nas variaveis "nome" e "peso".
-    nome = str(input(f'Diga o nome da {cont+1}° pessoa: '))
-    peso = float(input(f'Diga o peso da {cont+1}° pessoa: '))
+    numero = int(input(f'Digite o {cont+1}° número: '))
+    l.append(numero)
+    if contnua == 9:
+        pergunta = str.upper(input(f'Você já colocou {cont+1} números, deseja continuar? (S/N): '))
+        contnua = 0
+
+        if pergunta == 'N' or pergunta == 'NÃO':
+            break
+    cont += 1
+    contnua += 1
+
     
-    if cont == 0:
-        peso_anterior = peso
-        l_mep.append(peso)
-    elif peso > peso_anterior:
-        l_map.append(peso)
-        peso_anterior = peso
-    elif peso < peso_anterior:
-        l_mep.append(peso)
-        peso_anterior = peso
-
-    # Caminho para final do código.
-    Again = str.upper(input('Deseja continuar? \n(S/n): '))
-    if Again == 'NÃO' or Again == 'N':
-        break
-
-    cont+=1
-print('~=' * 21)
-print(f'Foram cadastradas {cont+1} pessoas; \nAs mais pessadas: {l_map:.2f};\nAs mais leves: {l_mep:.2f}.')
+l.sort(reverse=True)
+print(f'foram digitados {cont+1} numeros {l};\n')

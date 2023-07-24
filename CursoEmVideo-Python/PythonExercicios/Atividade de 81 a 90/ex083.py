@@ -1,23 +1,28 @@
-# Desafio 086 - Crie um programa que crie uma matriz 
-# de dimensão 3x3 e preencha com valores lidos pelo teclado.
+# Desafio 083 - Crie um propgrama onde o usúario digite 
+# uma expressão qualquer que use parênteses. Seu aplicativo 
+# deverá analisar se a expressão passada está com os 
+# parênteses abertos e feçados na ordem correta.
+l = []
+exp = str.upper(input('Digite a expresão: '))
+for simb in exp:
+    if simb =='(':
+        l.append('(')
+    elif simb ==')':
+        if len(l) > 0:
+            l.pop()
+        else:
+            l.append(')')
+            break
+if len(l) == 0:
+    print('Sua expressão está correta!')
+else:
+    print('Sua expressão está equivocada!')
 
-# No final, mostre a matriz na tela, com a formatação correta.
-cont = 0
-m= [[ ],[ ],[ ],[ ],[ ],[ ],[ ],[ ],[ ]]
-while cont < 9:
-    num = int(input(f'Digite o {cont+1}° número: '))
 
-    m[cont].append(num)
+#for c in exp:
+    
+# Exe: ((a+b) * c / (d-e))
 
-    cont+=1
+# Ultimo exercicio do capitulo 17
 
-print(f'\n{m[0]} \xA0 {m[1]} \xA0 {m[2]}')
-print(f'{m[3]} \xA0 {m[4]} \xA0 {m[5]}')
-print(f'{m[6]} \xA0 {m[7]} \xA0 {m[8]}\n')
 
-# Assim que o resultado deve se apresentar:
-#
-#[ 1 ][ 2 ][ 3 ]
-#[ 4 ][ 5 ][ 6 ]
-#[ 7 ][ 8 ][ 9 ]
-#

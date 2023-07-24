@@ -1,26 +1,13 @@
-# Desafio 079 - Crie um programa onde o usuário possa 
-# digitar vários valores numéricos e cadastre-os em 
-# uma lista. Caso o número já exista lá dentro, 
-# ele não será adicionado. No final, serão exibidos 
-# todos os valores únicos digitados, em ordem crescente.
+# Desafio 076 - Crie um programa que tenha 
+# uma tupla única com nomes de produtos e seus 
+# respectivos preço, na sequência.
 
-l = []
+# No final, mostre uma listagem de preços, 
+# organizando os dados em forma tabular.
+
 cont = 0
-contnua = 0
-while True:
+tupla = ('pão', 10.64, 'melancia', 11.50, 'cachorro', 100.75, 'chiclete', 1.25, 'açucar', 26.50)
 
-    numero = int(input(f'Digite o {cont+1}° numero: '))
-    l.append(numero)
-
-    if contnua == 9:
-        pergunta = str.upper(input(f'Você já colocou {cont+1} números, deseja continuar? (S/N): '))
-        contnua = 0
-
-        if pergunta == 'N' or pergunta == 'NÃO':
-            break
-    cont += 1
-    contnua += 1
-    l.sort()
-
-
-print(l)
+for c in range(5):
+    print(f'{tupla[cont]}|{tupla[cont+1]:.2f}')
+    cont+=2

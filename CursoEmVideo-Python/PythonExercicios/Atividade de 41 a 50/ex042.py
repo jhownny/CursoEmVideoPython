@@ -1,24 +1,31 @@
-# Desafio 045 - Crie um programa que faça
-# o computador jogar Jokenpô com você.
+# Desafio 042 - Refaça o DESAFIO 035 dos
+# triângulos, acrescentando o recurso de
+# mostrar que tipo de triângulo será formado:
+#
+# Equilátero: todos os lados iguais;
+# Isósceles: dois lados iguais;
+# Escalenos: todos os lados diferentes.
 
-import random
+reta1 = int(input('Me informe as três medidas das retas\n:'))
+reta2 = int(input(':'))
+reta3 = int(input(':'))
 
-escolha = str(input('Escolha entre pedra, papel e tesoura:'))
-jokenpo = escolha.capitalize()
+# Caso dê certo apresenta o resultado.
+if (reta1 + reta2) > reta3 and (reta1 + reta3) > reta2 and (reta2 + reta3) > reta1:
+    print('\nFecha um triângulo em meu querido!')
 
-escolhaPC = 'Pedra', 'Papel', 'Tesoura'
-jokenpoPC = random.choice(escolhaPC)
+    # Caso todos os lados sejam iguais, apresenta a mensagem.
+    if reta1 == reta2 and reta2 == reta3 and reta3 == reta1:
+        print(f'É um \033[1;35mTriângulo Equilatero\033[m!')
 
-if jokenpoPC == jokenpo:
-    print(f'\033[1;33mEmpatou\033[m! O resultado foi \033[1;34m{jokenpoPC}\033[m contra \033[1;34m{jokenpo}\033[m.')
+    # Caso somente dois lados digitados sejam iguais, apresenta a mensagem.
+    elif reta1 == reta2 != reta3 or reta3 == reta2 != reta1 or reta1 == reta3 != reta2:
+        print(f'É um \033[1;34mTriângulo Isósceles\033[m!')
 
-elif jokenpoPC == 'Pedra' and jokenpo == 'Papel' or jokenpoPC == 'Tesoura' and jokenpo == 'Pedra' or jokenpoPC == 'Papel' and jokenpo == 'Tesoura':
-    print(f'Você \033[1;32mGanhou\033[m! O resultado foi \033[1;35m{jokenpoPC}\033[m contra \033[1;34m{jokenpo}\033[m. ')
+    # Caso todos os lados digitados sejam diferentes apresenta, a mensagem.
+    elif reta1 != reta2 != reta3 != reta2 != reta3 != reta1:
+        print(f'É um \033[1;33mTriângulo Escaleno\033[m!')
 
-elif jokenpo == 'Pedra' and jokenpoPC == 'Papel' or jokenpo == 'Tesoura' and jokenpoPC == 'Pedra' or jokenpo == 'Papel' and jokenpoPC == 'Tesoura':
-    print(f'Você \033[1;31mPerdeu\033[m! O resultado foi \033[1;34m{jokenpoPC}\033[m contra \033[1;35m{jokenpo}\033[m.')
-
+# Caso não de certo apresenta a mensagem
 else:
-    print(f'Tem que ser Pedra, Papel ou Tesoura. Você escreveu: \033[4;31m{jokenpo}\033[m.')
-# ultima atividade do capitulo 12
-
+    print('\033[1;31mFechou não, meu bom.\033[m')

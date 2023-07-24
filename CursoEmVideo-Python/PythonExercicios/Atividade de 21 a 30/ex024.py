@@ -1,12 +1,15 @@
 
-# Desafio 027 - Faça um programa
-# que leia o nome completo de uma
-# pessoa, mostrando em seguida o
-# primeiro e o último nome separadamente.
+# Desafio 024 - Crie um programa que
+# leia o nome de uma cidade e diga
+# se ela começa ou não com o nome "SANTO".
 
-n = str(input('Me diga seu nome\n: ')).strip()
+cid = str(input('digite o nome da sua cidade\n: '))
+# var: declara em que posição se encontra a palavra sendo "0" a primeira e -1 quando não tem.
+mcid = cid.upper()
+var = mcid.find('SANTO')
 
-nome = n.split()
+if var == 0:
+    print(f'O nome da sua cidade, a cidade {cid}, começa com Santo!')
 
-print(f'O seu primeiro nome é {nome[0]}.')
-print(f'Seu ultimo sobrenome é {nome[-1]}.')
+else:
+    print(f'O nome da sua cidade, a cidade {cid}, não começa com Santo.')

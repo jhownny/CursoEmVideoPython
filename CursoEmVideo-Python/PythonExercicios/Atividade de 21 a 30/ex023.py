@@ -1,16 +1,46 @@
+# Desafio 023 - Faça um programa que
+# leia um número de 0 a 9999 e mostre
+# na tela cada um dos digitos separados.
 
-# desafio 026 - Faça um Programa
-# que leia uma frase pelo teclado e mostre:
+num = int(input('digite um numero de 0 a 9999\n: '))
+# num: pode ter um numero de 0 a 9999
+# num2: coloca espaço entre os numeros
+# num3: substitui os espaços por ";"
+# num3.split(";"): substitui as ";" por espaçamento separando os numeros por unidade
 
-# Quantas vezes aparece a letra "A".
-# Em que posição ela aparece a primeira vez.
-# Em que posição ela aparece a última vez.
+if num >= 0 and num <= 9:
+    print(f'O numero {num} é uma Unidade. ')
 
-print('não fiz, não achei a solução para esse exercicio nas funções apresentadas. Resolução do codigo a baixo:\n')
+elif num >= 10 and num <= 99:
 
-frase = str(input('Digite uma frase: ')).upper().strip()
+    num2 = " ".join(str(num))
+    num3 = ';'.join(num2.split())
+    dnum, unum = num3.split(";")
+    print(f'Separando esses numeros'
+          f'com as devidas identificações fica:'
+          f' \nO numero {dnum} é um Dezena \nO '
+          f'Numero {unum} é uma Unidade')
 
-print(f'A letra A aparece {frase.count("A")} vezes na frase.')
-print(f'A primeira letra A apareceu na posição {frase.find("A")+1}')
-print(f'A ultima letra A apareceu na posição {frase.rfind("A")+1}')
+elif num >= 100 and num <= 999:
 
+      num2 = " ".join(str(num))
+      num3 = ';'.join(num2.split())
+      cnum, dnum, unum = num3.split(";")
+      print(f'Separando esses numeros com as devidas identificações fica:\n'
+            f'O Numero {cnum} é uma Centena\n'
+            f'O Numero {dnum} é uma Dezena\n'
+            f'O Numero {unum} é uma Unidade')
+
+elif num >= 1000 and num <= 9999:
+
+      num2 = " ".join(str(num))
+      num3 = ';'.join(num2.split())
+      mnum, cnum, dnum, unum = num3.split(";")
+      print(f'Separando esses numeros com as devidas identificações fica:\n'
+            f'O Numero {mnum} é uma Milha\n'
+            f'O Numero {cnum} é uma Centena\n'
+            f'O Numero {dnum} é uma Dezena\n'
+            f'O Numero {unum} é uma Unidade')
+
+else:
+    print(f'parece que "{num}" não atende aos requisitos solicitados.')

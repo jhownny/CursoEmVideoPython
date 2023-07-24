@@ -1,26 +1,29 @@
-# Desafio 078 - Faça um programa que leia 
-# 5 valores numéricos e guarde-os em uma lista.
+# Desafio 075 - Desenvolva um programa que leia 
+# quatro valores pelo teclado e guarde-os em 
+# uma tupla. No final, mostre:
 
-# No final, mostre quaal foi o maior e o menor 
-# valor digitado e as suas respectivas posições na lista.
+# A) Quantos vezes apareceu o valor 9.
+# B) Em que posição foi digitado o primeiro valor 3.
+# C) Quais foram os números pares.
 
-lista = []
+onde = []
+l = []
+cont_nove = 0
 cont = 0
-menorN = 0
-maiorN = 0
-while True:
-    numero = int(input(f'Digite o {cont+1}° numero: '))
-    if cont == 0:
-        maiorN = numero
-        menorN = numero
-    if numero < menorN:
-        menorN = numero
-    elif numero > maiorN:
-        maiorN = numero
+
+while cont < 4:
+    num = int(input(f'Digite o {cont+1}° numero: '))
     cont+=1
-    lista.append(numero)
-
-    if cont == 5:
-        break
-
-print(f'O Maior Número é o {maiorN}, \nO Menor Número é o {menorN} \nE a Ordem de Colocação de Cada um é Essa: {lista}')
+    
+    if num == 9:
+        cont_nove+=1
+        
+    if num == 3:        
+        onde.append(cont)
+        
+    if num %2 == 0:
+        l.append(num)
+        
+aqui = tuple(onde)
+n = tuple(l)
+print(f'O número nove apareceu {cont_nove} vez(es); \nO primeiro numero 3 foi digtado na {aqui[0]}° posição; \nOs numeros pares digitados foram: {n}.')    

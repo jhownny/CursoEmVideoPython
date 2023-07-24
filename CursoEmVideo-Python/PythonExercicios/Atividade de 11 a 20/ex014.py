@@ -1,14 +1,9 @@
-# Desafio 017 - Faça um programa que
-# leia o comprimento de cateto oposto
-# e do cateto adjacente de um triângulo
-# retângulo, calcule e mostre o comprimento
-# da hipotenusa.
 
-import math
+# Desafio 014 - Escreva um programa
+# que converta uma temperatura
+# digitada em °c e converta para °F.
 
-co = int(input('me diga o valor do cateto oposto:'))
-ca = int (input('me diga o valor do cateto adjacente:'))
-x = (co ** 2) + (ca ** 2)
-h = math.sqrt(x)
+C = float(input('Informe a temperatura em °C:'))
+F = (C*1.8) + 32
 
-print(f'{h:.0f}')
+print('{}°C? Parece que a equivalencia a esse temperatura em Fahrenheit é: {:.1f}°F '.format(C, F))

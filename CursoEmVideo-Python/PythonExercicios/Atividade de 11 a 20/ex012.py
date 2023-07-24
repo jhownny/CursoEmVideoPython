@@ -1,16 +1,10 @@
 
-# Desafio 015 - Escreva um programa que pergunte a
-# quantidade de Km percorridos por um carro alugado
-# e a quantidade de dias pelos quais ele doi alugado
-# e a quantidade de dias pelos quais ele foi alugado.
-# Calcule o preço a pagar, sabendo que o carro custa
-# R$60 por dia e R$0,15 por Km rodado.
+# Desafio 012 - Faça um Algoritmo
+# que leia o preço de um produto
+# e mostre seu novo preço, com 5% de Desconto.
 
-d = int(input('Quantos dias você ficou com o veículo?'))
-k = float(input('Quantos Km foram rodados com o veículo?'))
+p = float(input('qual o preço do produto? '))
+vd = (p*0.05)
+vf = (p-vd)
 
-pd = d * 60
-pk = k * 0.15
-
-
-print(f'Como você percorreu {k:.2f} Km e ficou com o veículo {d} dias você terá que pagar um total de R${pd + pk:.2f}')
+print('este produto de R${} Reais está com o desconto de 5% que é equivalente a R${:1f} Reais'.format(p, vf))

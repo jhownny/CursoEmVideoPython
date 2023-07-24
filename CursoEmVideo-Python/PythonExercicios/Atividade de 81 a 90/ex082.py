@@ -1,22 +1,32 @@
-# Desafio 085 - Crie um programa onde o usuário possa 
-# digitar sete valores numéricos e cadastre-os em uma 
-# lista única que mantenha separados os valores pares 
-# e impares. No final, mostre os valores pares e 
-# impares em ordem crescente.
+# Desafio 082 - Crie um programa que vai ler 
+# vários números e colocar em uma lista.
 
-cont = 0 
-l = [[],[]]
-while cont < 7:
-    num = int(input(f'Digite o {cont+1}° numero: '))
-    if num%2 == 0:
-        l[0].append(num)
+# Depois disso, crie duas listas extras que 
+# vão conter apenas os valores pares e os valores 
+# impares digitados, respectivamente.
+
+# Ao final, mostre o conteúdo mostre o 
+# conteúdo das três listas geradas.
+lv = []
+l_par = []
+l_impar = []
+cont = 0
+while True:
+
+    v = int(input(f'Digite o {cont+1}° número: '))
+    lv.append(v)
+    if v %2 == 0:
+        l_par.append(v)
     else:
-        l[1].append(num)
+        l_impar.append(v)
+    
+    final = str.upper(input(f'Deseja continuar? [S/n]: '))
+    if final == 'N' or final == 'NÃO':
+        break
+
     cont+=1
 
-l[1].sort()
-l[0].sort()
-tamanho0 = len(l[0])
-tamanho1 = len(l[1])
-
-print(f'Dos {cont} números digitados, {tamanho0}({l[0]}) são pares e  {tamanho1}({l[1]}) são impares.')
+print('~=' * 15)
+print(f'Esses são os {cont+1} números que você digitou: {lv}')
+print(f'Esses são os numeros pares digitados: {l_par}')
+print(f'Esses são os numeros impares digitados: {l_impar}')

@@ -1,10 +1,10 @@
 
-# Desafio 016 - Crie um programa que leia
-# um número Real qualquer
-# pelo teclado e mostre na
-# tela a sua porção inteira.
+# Desafio 013 - Faça um Algoritmo
+# que leia o salário de um funcionário
+# e mostre seu novo salário, com 15% de aumento.
 
-import math
-nun = float(input('digite um numero: '))
+s = float(input('Diga-me seu salario:R$'))
+va = (s*0.15)
+vf = (s+va)
 
-print(f'O numero{nun} tem a parte inteira {math.ceil(nun)}')
+print('R${}? Olha você recebeu 15% de aumento no seu salario UAU :R${}'.format(s, vf))

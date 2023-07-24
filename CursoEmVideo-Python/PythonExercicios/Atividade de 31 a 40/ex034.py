@@ -1,24 +1,21 @@
-# Desafio 037 - Escreva um programa que
-# leia um número inteiro qualquer e peça
-# para o usuário escolher qual será a base
-# de conversão:
+# Desafio 034 - Escreva um programa
+# que pergunte o salário de um funcionário
+# e calcule o valor do seu aumento.
 #
-# 1 para binário;
-# 2 para octal;
-# 3 para hexadecimal.
+# Para salários superiores a
+# R$1.250,00, calcule um aumento de 10%.
+#
+# Para os inferiores ou iguais, o aumento é de 15%.
 
-n = int(input('Digite um numero inteiro qualquer\n:'))
-escolha = int(input('Me informe a conversão que deseja fazer\n'
-                    '(1) para\033[1;35m Binário\033[m\n'
-                    '(2) para\033[1;34m Octal\033[m\n'
-                    '(3) para\033[1;33m Hexadecimal\033[m\n:'))
+salario = float(input('Me diga seu salario, meu nobre\n:'))
 
-if escolha == 1:
-    print(bin(n)[2::1])
-elif escolha == 2:
-    print(oct(n)[2::1])
-elif escolha == 3:
-    print(hex(n)[2::1])
+if salario > 1.250:
+    va = (salario * 0.10)
+    vf = (salario + va)
+    print(f'Você teve um aumento de 10% no seu salario: R${vf:.2f}')
 else:
-    print('---------------------------------------------------------------')
-    print(f'\033[1;31m ERRO, dados informados não coincidem {escolha} não é um formato aceito! ')
+    va = (salario * 0.15)
+    vf = (salario + va)
+    print(f'Você teve um aumento de 15% no seu salario: R${vf:.2f}')
+
+

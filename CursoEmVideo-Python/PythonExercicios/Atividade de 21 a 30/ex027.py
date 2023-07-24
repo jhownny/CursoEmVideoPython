@@ -1,10 +1,12 @@
-# Desafio 030 - Crie um programa que
-# leia um número inteiro e mostre na
-# tela se ele é PAR ou ÍMPAR.
 
-num = int(input('Digite um numero aleatório\n:'))
+# Desafio 027 - Faça um programa
+# que leia o nome completo de uma
+# pessoa, mostrando em seguida o
+# primeiro e o último nome separadamente.
 
-if num % 2 == 1:
-    print(f'{num} é IMPAR.')
-else:
-    print(f'{num} é PAR.')
+n = str(input('Me diga seu nome\n: ')).strip()
+
+nome = n.split()
+
+print(f'O seu primeiro nome é {nome[0]}.')
+print(f'Seu ultimo sobrenome é {nome[-1]}.')

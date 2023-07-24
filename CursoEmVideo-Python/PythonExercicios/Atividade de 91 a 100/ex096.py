@@ -1,11 +1,9 @@
-# Desafio 099 - Faça um programa que tenha uma função 
-# chamada maior(), que receba vários parâmetros com valores inteiros.
+# Desafio 096 - Faça um programa que tenha uma função 
+# chamada área(), que receba as dimensões de um terreno 
+# retangular{largura e comprimento} e mostre a área do terreno.
 
-# Seu programa tem que analisar todos os valores e dizer qual deles é o maior.
+def area(l,c):
+    print(f'O retangulo com {l} metros de LARGURA, e {c} metros de COMPRIMENTO, tem no total uma área de {l*c}m² !')
 
-def maior(lista):
-    organizado = sorted(lista)
-    print(f'O maior numeros da lista é o: {organizado[-1]}')
-        
 
-maior([67,2,84,110,30,6,35,8,94,20])
+area(5,8)

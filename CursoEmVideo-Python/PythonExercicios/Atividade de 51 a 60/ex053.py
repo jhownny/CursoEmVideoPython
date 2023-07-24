@@ -1,42 +1,22 @@
-# Desafio 056 — Desenvolva um programa que
-# leia o nome, idade e sexo de 4 pessoas.
-# No final do programa, mostre:
+# Desafio 053 - Crie um programa que leia
+# uma frase qualquer e diga se ela é um
+# palíndromo, desconsiderando os espaços.
 #
-# - A média de idade do grupo;
-# - Qual é o nome do homem mais velho;
-# - Quantas mulheres têm menos de 20 anos.
+# Ex: APOS A SOPA A
+# SACADA DA CASA
+# A TORRE DA DERROTA
+# O LOBO AMA O BOLO
+# ANOTARAM A DATA DA MARATONA
 
-cont = 1
-Nhomem_velho = ""
-homem_velho = 0
+# _____________________________ NÃO FEITO POR FALTA DE CONHECIMENTO ________________________________________
 
-while cont <= 4 :
-
-    nome = str.capitalize(input('\nDigite seu nome: '))
-    idade = int(input('Digite sua idade: '))
-    sexo = str.capitalize(input(f'{nome}, Digite o sexo que você se Identifica(Feminio ou Masculino): '))    
-
-    if cont == 1:
-        soma_idade = idade
-    else:
-        soma_idade += idade
-
-    if sexo == "Masculino" or sexo == "M":
-    
-        if cont == 1:
-            homem_velho = idade
-            Nhomem_velho = nome
-        
-        elif homem_velho < idade:
-            homem_velho = idade
-            Nhomem_velho = nome
-    else:
-        cont_mulher = 0
-        if idade < 20:
-            nome_mulher = nome
-            cont_mulher+=1
-
-    cont+=1
-print(f'A media de Idade das pessoas Digitadas é de: {soma_idade/4:.0f} Anos; \nO homem mais velho se chama: {Nhomem_velho} - {homem_velho:.0f} anos; \nTem {cont_mulher} Mulher(es), {nome_mulher} com menos de 20 anos.')
-
-# Ultimo exercicio do capitulo 13
+frase = str(input('Digite uma frase: ')).strip().upper()
+palavras = frase.split()
+junto = ''.join(palavras)
+inverso = ''
+for letra in range(len(junto) - 1, -1, -1):
+    inverso += junto[letra]
+if inverso == junto:
+    print('temos  um palíndromo!')
+else:
+    print('A frase digitada não é um palíndromo')

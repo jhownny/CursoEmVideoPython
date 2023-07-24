@@ -1,42 +1,51 @@
-# Desafio 095 - Aprimore o DESAFIO 093 para que ele 
-#funcione com vários jogadores, incluindo um sistema 
-#de visualização de detalhes do aprovamento de cada 
-#jogador.  
+# Desafio 092 - Crie um programa que leia nome, ano de 
+# nascimento e carteira de trabalho e cadastre-os 
+# (com idade) em um dicionário se por acaso a CTPS for 
+# difrrente de ZERO, o dicionário receberá também o ano 
+# de contratação e o salário, com qunatos anos a pessoa 
+# vai se aposentar. 
+from datetime import datetime
 
-# (Desafio 093 - Crie um programa que gerencie o 
-#   aproveitamento de um jogador de futebol. O programa 
-#   vai ler o nome do jogador e qunatas partidasd ele jogou. 
-#   Depois vai ler a quantidade de gols feitos em cada partida. 
-#   No final, tudo isso será guardado em um dicionário, incluindo
-#   o total de gols feitos durante o campeonato.)
+pessoa = {}
+Hoje = datetime.now()
+nome =str.title(input('Digite seu nome: '))
+ano =int(input('Digite o ano de seu nascimento: '))
+idade = Hoje.year - ano
 
-jogadores=list()
-jogador=dict()
-lista=list()
-while True:
-    nome = str.title(input('Digite seu nome: '))
-    jogador['nome'] = nome
-    partidas = int(input('Digite a quantidade de partidas jogadas: ')) 
-    jogador['partidas'] = partidas
-    for i in range(partidas):
-        gol = int(input(f'Digite quantos gols você fez na {i+1}° partida: '))
-        lista.append(gol)
-    total = sum(lista)
-    jogador['gols'] = lista.copy()
-    jogador['total'] = total
-    jogadores.append(jogador.copy())
-    lista.clear()
-    continua = str.upper(input('Deseja continuar adicionando? [S/n]: '))
-    if continua == 'N' or continua == 'NÃO':
-        break
-    
-print(jogadores)
-# Ultimo exercicio do capitulo 19
+pessoa['Nome'] = nome
+pessoa['Idade'] = idade
+
+CT = int(input('Digite a carteira de trabalho (0 não tem): '))
+pessoa['CTPS'] = CT
+if CT != 0:
+    contrato = int(input('Digite qual foi o seu ano de contrato: '))
+    salario = float(input('Digite seu salario mensal: '))
+    pessoa['Contrato'] = contrato
+    pessoa['Salário'] = salario
+
+print('-=' * 20)
+
+print(pessoa)
+
+for chaves, valor in pessoa.items():
+    print(f'{chaves} tem o valor {valor}')
+
+#Ex:
+# Nome: Jhonta
+# Ano de Nascimento: 2004
+# Carteira de Trabalho (0 não tem): 1234
+# Ano de Contratação: 2020
+# Salário: R$1000
+
+# print('-=' * 20)
+
+#{'nome':'Jhonata', 'idade':19, 'ctps':1234, 'contratação':2020, 'salário':1000}
+#   (nome) tem valor (Jhonata)
+#   (idade) tem o valor (19)
+#   (ctps) tem o valor (1234)
+#   (contratação) tem o valor (1000.00)
+#   (aposentadoria) tem o valor (52)
+#
+#
 
 
-#
-#
-#
-#
-#
-#

@@ -1,24 +1,13 @@
-# Desafio 064 - Crie um programa que leia vários
-# números inteiros pelo teclado. O programa só
-# vai parar quando o usuário digitar o valor 999,
-# que é a condição de para da. No final, mostre
-# quantos números foram digitados e qual foi a
-# soma entre eles (Desconsiderando o flag).
+# Desafio 061 — Refaça o DESAFIO 051
+# lendo o primeiro termo e a razão de
+# uma PA, mostrando os 10 primeiros
+# termos da progressão usando a estrutura while.
 
-n1 = -1
-soma = []
-i = 0
-print('Olá, Bem vindo ao programa de soma.')
-print('Digite o numero "999" se quiser parar de fazer a soma dos valores.\n')
-while n1 != 999: 
+an = int(input('Digite o Primeiro Termo: '))
+r = int(input('Digite a Reação: '))
+m = an + (10-1)*r
+cont = 0
 
-
-    n1 = int(input(f'Digite o {i+1}° numero para a soma: '))
-    i = i+1
-    soma.append(n1)
-
-
-soma_total = sum(soma)
-quant = len(soma)
-
-print(f'\nVocê digitou {quant} numero(s) e a soma dele(s) é de {soma_total}!')
+while an != m:
+    print('{}'.format(m), end='→')
+    cont += 1

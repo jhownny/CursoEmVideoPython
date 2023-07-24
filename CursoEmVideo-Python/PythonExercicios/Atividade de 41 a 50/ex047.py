@@ -1,12 +1,7 @@
-# Desafio 050 - Desenvolva um programa que leia seis
-# números inteiros e mostre a soma apenas daqueles
-# que forem pares. Se o valor digitado
-# for impar, desconsidere-o.
-soma = 0
-cont = 0
-for c in range(1, 7):
-    num = int(input(f'Digite o {c}° valor: '))
-    if num % 2 == 0:
-        soma += num
-        cont += 1
-print(f'Você informou {cont} números e a soma  foi {soma}. ')
+# Desafio 047 - Crie um programa que mostre na
+# tela todos os números pares que estão no
+# intervalo entre 1 a 50.
+
+for c in range(2, 51, 2):
+    print(c)
+print('fim')

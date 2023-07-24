@@ -1,25 +1,26 @@
-# Desafio 065 - Crie um programa que leia vários números
-# inteiros pelo teclado. No final da execução, mostre a
-# média entre todos os valores e qual foi o maior e o
-# menor valores lidos. O programa deve perguntar ao
-# usuário se ele quer ou não continuar a digitar valores.
+# Desafio 062 — Melhore o DESAFIO 061, perguntando
+# para o utilizador se ele quer mostrar mais alguns
+# termos. O programa encerra quando ele disser
+# que quer mostrar O termo.
 
-n1 = -1
-soma = []
-saida = 'S'
-print('Olá, Bem vindo ao programa de soma.')
+primeiro_termo = int(input('Digite o primeiro termo da PA: '))
+razao = int(input('Digite a razão da PA: '))
 
-while saida != 'N': 
+termo_atual = primeiro_termo
+contador = 1
 
-    for i in range(10):
-        n1 = int(input(f'Digite o numero para a soma: '))
-        soma.append(n1)
-    saida = str(input('Deseja Continuar Inserindo Numeros? (S/N): ')).upper()
+while True:
 
-
-soma_total = sum(soma)
-
-
-print(f'\nA soma dos numeros digitados foi: {soma_total}!')
-
-# Final dos Exercicios 14
+    print(f'{termo_atual}', end=' -> ')
+    termo_atual += razao
+    contador += 1
+    if contador == 10:
+        print('Fim')
+        pergunta = str.capitalize(input('\nDeseja adicionar mais termos?: '))
+        if pergunta == "Sim" or pergunta == "S":
+            contador = 1
+            primeiro_termo = int(input('Digite o primeiro termo da PA: '))
+            razao = int(input('Digite a razão da PA: '))
+            termo_atual = primeiro_termo
+        else:
+            break

@@ -1,31 +1,22 @@
-# Desafio 088 - Faça um programa que ajude um jogador 
-# da MEGA SENA  a criar palpites. O programa vai perguntar 
-# quantos jogos serão gerados e vai sortear 6 números entre 
-# 1 e 60 para cadas jogo, cadastrando tudo em uma lista composta. 
+# Desafio 085 - Crie um programa onde o usuário possa 
+# digitar sete valores numéricos e cadastre-os em uma 
+# lista única que mantenha separados os valores pares 
+# e impares. No final, mostre os valores pares e 
+# impares em ordem crescente.
 
-import random
-
-cont = 0
-jogos = []
-
-QuantGame = int(input('Digite quantos jogos deseja gerar: '))
-
-while QuantGame > 0:
-    jogos.append([])
-    QuantGame-=1
-
-    for l in range(6):
-        a = random.randrange(1,60)
-        jogos[cont].append(a)
-
+cont = 0 
+l = [[],[]]
+while cont < 7:
+    num = int(input(f'Digite o {cont+1}° numero: '))
+    if num%2 == 0:
+        l[0].append(num)
+    else:
+        l[1].append(num)
     cont+=1
 
-cont = 0
-print('\nOs palpites dos jogos solicitados são esses:')
+l[1].sort()
+l[0].sort()
+tamanho0 = len(l[0])
+tamanho1 = len(l[1])
 
-for MegaSena in jogos:
-    print(f' {cont+1}° Jogo: {MegaSena}')
-    cont+=1
-
-
-
+print(f'Dos {cont} números digitados, {tamanho0}({l[0]}) são pares e  {tamanho1}({l[1]}) são impares.')

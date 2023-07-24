@@ -1,21 +1,42 @@
-# Desafio 098 - Faça um programa que tenha uma função chamda contador(), 
-#que receba três parâmetros:inicio, fim e passo e realize a contagem.
+# Desafio 095 - Aprimore o DESAFIO 093 para que ele 
+#funcione com vários jogadores, incluindo um sistema 
+#de visualização de detalhes do aprovamento de cada 
+#jogador.  
 
-# Seu programa tem que realizar três contagens através da função criada:
-# a) De 1 até 10, de 1 em 1;
-# b) De 10 até 0, de 2 em 2;
-# c) Uma contagem personalizada.
+# (Desafio 093 - Crie um programa que gerencie o 
+#   aproveitamento de um jogador de futebol. O programa 
+#   vai ler o nome do jogador e qunatas partidasd ele jogou. 
+#   Depois vai ler a quantidade de gols feitos em cada partida. 
+#   No final, tudo isso será guardado em um dicionário, incluindo
+#   o total de gols feitos durante o campeonato.)
 
-def contador(inicio,fim,passo):
-    print('Contagem de 1 até 10, de 1 em 1:')
-    for i in range(1,11,1):
-        print(f' {i}', end=' ')
-    print('\nContagem de 10 até 0, de 2 em 2:')
-    for i in range(10,-1,-2):
-        print(f'{i}', end=' ')
-    print(f'\nContagem personalizada de {inicio} até {fim}, de {passo} em {passo}:')
-    for p in range(inicio,fim,passo):
-        print(f'{p}', end=' ')
-    print(' ')
+jogadores=list()
+jogador=dict()
+lista=list()
+while True:
+    nome = str.title(input('Digite seu nome: '))
+    jogador['nome'] = nome
+    partidas = int(input('Digite a quantidade de partidas jogadas: ')) 
+    jogador['partidas'] = partidas
+    for i in range(partidas):
+        gol = int(input(f'Digite quantos gols você fez na {i+1}° partida: '))
+        lista.append(gol)
+    total = sum(lista)
+    jogador['gols'] = lista.copy()
+    jogador['total'] = total
+    jogadores.append(jogador.copy())
+    lista.clear()
+    continua = str.upper(input('Deseja continuar adicionando? [S/n]: '))
+    if continua == 'N' or continua == 'NÃO':
+        break
+    
+print(jogadores)
+# Ultimo exercicio do capitulo 19
 
-contador(5,20,2)
+
+#
+#
+#
+#
+#
+#

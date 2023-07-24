@@ -1,12 +1,14 @@
-# Desafio 049 — Refaça o DESAFIO 009, mostrando a
-# tabuada de um número que o utilizador escolher,
-# entretanto, utilizando agora um laço for.
+# Desafio 046 - Faça um programa que mostre na
+# tela uma contagem regressiva para o estouro
+# de fogos de artifício, indo de 10 até 0, com
+# uma pausa de 1 segundo entre eles.
 
-s = 0
-n = int(input('Digite um valor para tabuada: '))
-for t in range(10):
-    s += 1
-    v = n * s
-    print(f'{n} x {s} = {v}')
+# time = delay de equivalencia a segundos, com .sleep.
 
+import time
+import emoji
 
+for f in range(10, 0, -1):
+    print(f)
+    time.sleep(1)
+print(emoji.emojize(':collision:Feliz Ano Novo:collision:', language = 'alias'))

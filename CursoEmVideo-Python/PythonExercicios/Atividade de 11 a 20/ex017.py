@@ -1,11 +1,14 @@
+# Desafio 017 - Faça um programa que
+# leia o comprimento de cateto oposto
+# e do cateto adjacente de um triângulo
+# retângulo, calcule e mostre o comprimento
+# da hipotenusa.
 
-# Desafio 020 - O mesmo professor do desafio
-# anterior quer sortear a ordem de apresentação
-# de trabalhos dos alunos. Faça um programa que
-# leia o nome dos quatro alunos e mostre a ordem sorteada.
+import math
 
-import random
+co = int(input('me diga o valor do cateto oposto:'))
+ca = int (input('me diga o valor do cateto adjacente:'))
+x = (co ** 2) + (ca ** 2)
+h = math.sqrt(x)
 
-cha = random.sample(['João','Pedro','Geovana','Cladio'], k=4)
-
-print(cha)
+print(f'{h:.0f}')

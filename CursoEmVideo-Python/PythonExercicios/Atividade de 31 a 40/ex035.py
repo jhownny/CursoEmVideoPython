@@ -1,17 +1,23 @@
-# Desafio 038 - Escreva um programa que leia dois
-# números inteiros e compare-os mostrando na tela
-# uma mensagem:
-#
-# O primeiro valor é maior;
-# O segundo valor é maior;
-# Não existe valor maior, os dois são iguais.
+# Desafio 035 - Desenvolva um programa que
+# leia o comprimento de três retas e diga
+# ao usuário se elas podem ou não formar um triângulo.
 
-n1 = int(input('Digite o \033[1;35mPrimeiro\033[m numero inteiro:'))
-n2 = int(input('Digite o \033[1;31mSegundo\033[m numero inteiro:'))
+#funcionamento basico:
+# | b - c | < a < b + c
+# | a - c | < b < a + c
+# | a - b | < c < a + b
 
-if n1 > n2:
-    print(f'\nO \033[1;35mPrimeiro\033[m numero é maior que o \033[1;31Segundo\033[m. \n{n1} é maior que {n2}')
-elif n2 > n1:
-    print(f'\nO \033[1;31mSegundo\033[m numero é maior que o \033[1;35mPrimeiro\033[m. \n{n2} é maior que {n1}')
+# a + b < c
+# a + c < b
+# b + c < c
+
+reta1 = int(input('Me informe as três medidas das retas\n:'))
+reta2 = int(input(':'))
+reta3 = int(input(':'))
+
+if (reta1 + reta2) > reta3 and (reta1 + reta3) > reta2 and (reta2 + reta3) > reta1:
+    print('Fecha um triângulo em meu querido!')
 else:
-    print(f'\nNão existe valor maior, os dois são iguais. \n{n1} é igual a {n2}')
+    print('fechou não, meu bom')
+
+# Ultimo exercicio do cap 10

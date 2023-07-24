@@ -1,21 +1,30 @@
-# Desafio 080 - Crie um programa onde o usuário possa 
-# digitar cinco valores numéricos e cadastre-os em uma 
-# lista, já na posição (sem usar o sort()).
-# No final, mostre a lista ordenada na tela.
+# Desafio 077 - Crie um programa que tenha uma tupla com 
+# várias palavras (não usaracentos). Depois disso, você 
+# deve mostrar, para cada palavra, quais são suas vogais.
 
-v_maior = 0
-l_Valor = []
 cont = 0
-while cont < 5:
-    
-    v = int(input(f'Digite o {cont+1}° valor: '))
+palavras = ('macaco', 'cachorro', 'lapis', 'borracha', 'monitor', 'calendario', 'janela', 'antetiguimon', 'uva')
 
-    for c in l_Valor:
-        if cont == 0:
-            l_Valor[0] = v
-        elif v >= l_Valor[c]:
-            l_Valor.insert(0, v)
-        elif v <= l_Valor[c]:
-            l_Valor.insert(-1, v)
+while True:
+    if cont == len(palavras):
+        break
+    listaVogais = []
+    lista = list(palavras)
+    separado = list(lista[cont])
+    for c in separado:
+        if c == 'a':
+            listaVogais.append(c)
+        if c == 'e':
+            listaVogais.append(c)
+        if c == 'i':
+            listaVogais.append(c)
+        if c == 'o':
+            listaVogais.append(c)
+        if c == 'u':
+            listaVogais.append(c)
+    print(f'A palavra "{palavras[cont].capitalize()}" tem as vogais {listaVogais};')
+    if cont == len(palavras):
+        break
     cont+=1
-print(l_Valor)
+
+# Ultimo exercicio do capitulo 16
