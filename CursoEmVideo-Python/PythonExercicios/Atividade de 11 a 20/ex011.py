@@ -1,4 +1,3 @@
-
 # Desafio 011 - Faça um programa
 # que leia a largura e a altura de
 # uma parede em metros, calcule a

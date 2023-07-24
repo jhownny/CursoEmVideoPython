@@ -5,5 +5,8 @@
 
 # Obs:Use Cores
 
+helper = 'oks'
+
+
 # Ultimo exercicio do capitulo 21
 

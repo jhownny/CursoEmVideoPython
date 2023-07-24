@@ -1,4 +1,3 @@
-
 # desafio 026 - Faça um Programa
 # que leia uma frase pelo teclado e mostre:
 

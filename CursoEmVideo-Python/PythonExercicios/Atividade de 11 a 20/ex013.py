@@ -1,4 +1,3 @@
-
 # Desafio 013 - Faça um Algoritmo
 # que leia o salário de um funcionário
 # e mostre seu novo salário, com 15% de aumento.
