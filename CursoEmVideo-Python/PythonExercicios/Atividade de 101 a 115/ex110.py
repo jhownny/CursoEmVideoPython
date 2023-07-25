@@ -1,1 +1,13 @@
-# Desafio 110 -
+# Desafio 110 - Adicione ao módulo moeda.py criado nos desafios 
+# anteriores, uma função chamada resumo(), que mostr3e na tela 
+# algumas informações geradas pelas funções que já temos no módulo 
+# criado até aqui.
+
+
+
+#Ex:
+
+# from ex110 import moeda
+
+#p = float(input('digite o preço: R$'))
+# moeda.resumo(p,80,35)
