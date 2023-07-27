@@ -1,5 +1,5 @@
 # Desafio 112 - Dentro do pacote utilidadesCeV que criamos no desafio 111, 
-# temos um módulo chamado dado. crie um função chamada inheiro() que seja 
+# temos um módulo chamado dado. crie um função chamada dinheiro() que seja 
 # capaz de funcionar como função input(), mas com uma validação de dados 
 # para aceitar apenas valores que sejam monetários.
 

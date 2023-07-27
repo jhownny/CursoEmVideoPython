@@ -1,3 +1,3 @@
 
-import moeda
 
+from utilidadesCeV import moeda

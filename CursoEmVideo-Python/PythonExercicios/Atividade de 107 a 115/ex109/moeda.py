@@ -3,6 +3,41 @@
 # se o valor retornado por elas vai ser ou não formatado pela 
 # função moeda(), desenvolvida no desafio 108.
 
+def metade(num, form = True):
+    num/=2
+    if form == True:
+        return (f'R${num:.2f}') 
+    else:
+        return num
+
+
+def dobro(num, form = True): 
+    num*=2
+    if form == True:
+        return (f'R${num:.2f}')
+    else:
+        num*=2
+        return num
+
+
+def aumentando(num, taxa, form = True):
+    res = num + (num*taxa/100)
+    if form == True:
+        return (f'R${res:.2f}')
+    else:
+        return res
+
+
+def diminuindo(num,taxa, form = True):
+    res = num - (num*taxa/100)
+    if form == True:
+        return (f'R${res:.2f}')
+    else:
+        return res
+
+
+def moeda(num):
+    return (f'R${num:.2f}')
 
 
 #Ex:
