@@ -3,15 +3,40 @@
 # algumas informações geradas pelas funções que já temos no módulo 
 # criado até aqui.
 
+def metade(num):
+    num/=2
+    return num
+
+
+def dobro(num): 
+    num*=2
+    return num
+
+
+def aumentando(num, taxa,):
+    res = num + (num*taxa/100)
+    return res
+
+
+def diminuindo(num,taxa,):
+    res = num - (num*taxa/100)
+    return res
+
+
+def moeda(num):
+    return (f'R${num:.2f}')
+
+
 def resumo(num,taxa,redutaxa):
+
     print('-' * 30)
     print('     \033[1mRESUMO DO VALOR\033[m')
     print('-' * 30)
-    print(f'Preço analizado:    R${num:.2f}')
-    print(f'Dobro do Preço:     R${num*2:.2f}')
-    print(f'Metade do preço:    R${num/2:.2f}')
-    print(f'{taxa}% de aumento:     R${num+(num*taxa/100):.2f}')
-    print(f'{redutaxa}% de redução:     R${num-(num*taxa/100):.2f}')
+    print(f'Preço analizado:    {moeda(num)}')
+    print(f'Dobro do Preço:     {moeda(dobro(num))}')
+    print(f'Metade do preço:    {moeda(metade(num))}')
+    print(f'{taxa}% de aumento:     {moeda(aumentando(num,taxa))}')
+    print(f'{redutaxa}% de redução:     {moeda(diminuindo(num,redutaxa))}')
     print('-' * 30)
 
 
