@@ -8,8 +8,6 @@
 # O LOBO AMA O BOLO
 # ANOTARAM A DATA DA MARATONA
 
-# _____________________________ NÃO FEITO POR FALTA DE CONHECIMENTO ________________________________________
-
 frase = str(input('Digite uma frase: ')).strip().upper()
 palavras = frase.split()
 junto = ''.join(palavras)

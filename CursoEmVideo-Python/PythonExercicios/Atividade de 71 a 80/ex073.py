@@ -14,8 +14,6 @@ tupla = ('Botafogo','Grêmio', 'Flamengo', 'Palmeiras', 'Red Bull Bragantino',
          'Fortaleza', 'Cruzeiro', 'Cuiabá-MT', 'Santos', 'Bahia', 'Corinthians', 
          'Goiás', 'Vasco da Gama', 'América-MG', 'Coritiba' )
 
-tuplaAlpha = ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',)
-
 print('Os primeiros 5 colocados no campeonato Brasileiro de Futebol são:\n')
 
 while cont <= 4:

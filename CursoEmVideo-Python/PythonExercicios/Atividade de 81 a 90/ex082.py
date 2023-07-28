@@ -20,7 +20,7 @@ while True:
     else:
         l_impar.append(v)
     
-    final = str.upper(input(f'Deseja continuar? [S/n]: '))
+    final = str.upper(input('Deseja continuar? [S/n]: '))
     if final == 'N' or final == 'NÃO':
         break
 
