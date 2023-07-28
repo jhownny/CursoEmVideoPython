@@ -4,6 +4,13 @@
 # transfira todas as funções utilizadas nos desafios 
 # 107,108 e 109 para o primeiro pacote e mantenha tudo funcionando.
 
+def metade(num, form = True):
+    num/=2
+    if form == True:
+        return (f'R${num:.2f}') 
+    else:
+        return num
+    
 
 
 #Ex:
