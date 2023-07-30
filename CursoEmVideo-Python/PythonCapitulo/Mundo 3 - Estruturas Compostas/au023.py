@@ -37,4 +37,4 @@ except KeyboardInterrupt:  # Falhou com os motivos especificados na chamada(valo
 else: # Deu Certo.
     print(f'O resultado  é {r}.')
 finally: # Vai ser executado independente do resultado.
-    print(f'Volte sempre! Muito obrigado.')
+    print('Volte sempre! Muito obrigado.')
