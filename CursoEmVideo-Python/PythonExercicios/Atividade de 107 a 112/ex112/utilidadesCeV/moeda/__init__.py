@@ -40,8 +40,6 @@ def resumo(num,taxa,redutaxa):
     print('-' * 30)
 
 #Ex:
-
 # from ex112.utilidadesCeV import dado
-
 #p = dado.leiaDinheiro('digite o preço: R$')
 # moeda.resumo(p, 35, 22)
