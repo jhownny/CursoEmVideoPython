@@ -9,12 +9,16 @@ def escolha(num):
         try: 
             n = int(input(num))    
         except (ValueError, TypeError):
-            print('Por Favor digite um valor valido presente acima')
+            print('\033[1;31mPor Favor digite um valor valido sugerido acima\033[m')
             continue
         except KeyboardInterrupt:
             print(f'\033[1;31m\nVocê não digitou ou deixou em branco!\033[m')
             return 3
         else:
-            try:
-                if num 
+            if n == 1 or n == 2 or n == 3:
+                return n
+            else:
+                print('\033[1;31mPor Favor digite um valor valido sugerido acima\033[m')
+                continue
+
   

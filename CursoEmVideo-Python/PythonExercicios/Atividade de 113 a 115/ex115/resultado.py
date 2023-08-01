@@ -1,6 +1,7 @@
 from dado import *
 from persona import *
 from arquivo import *
+from time import sleep
 
 arq = "CursoEmVideo-Python\PythonExercicios\Atividade de 113 a 115\ex115\oarquivo.txt"
 
@@ -18,8 +19,15 @@ while True:
     print('\033[;33m3 -\033[m \033[;34mSair do Sistema\033[m')
 
     linhazinha()
-    escolhe = escolha('Digite: ')
-    print(escolhe)
+    es = escolha(LetraCor('Digite: ',10,9))
+
+    if es == 1:
+        print('Lista')
+    elif es == 2:
+        print('nova pessoa')
+    elif es == 3:
+        break
+    sleep(2)
             
     #if escolha == 1:
     #elif escolha == 2:

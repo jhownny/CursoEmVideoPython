@@ -7,6 +7,7 @@ def arquivoexiste(nome):
     else: 
         return True
     
+    
 def criararquivo(nome):
     try:
         a = open(nome, 'wt+')
@@ -16,12 +17,13 @@ def criararquivo(nome):
     else:
         print('bb')
         
+
 def lerarquivo(nome):
     try:
         a = open(nome, 'rt')
     except:
         print('erro')
     else:
-        print('aaa')
+        print('')
     
     
