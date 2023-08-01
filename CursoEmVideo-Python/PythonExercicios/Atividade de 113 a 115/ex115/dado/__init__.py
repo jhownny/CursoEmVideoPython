@@ -1,6 +1,8 @@
+# Desafio 115 - Ccrie um pequeno sistema modularizado que permita 
+# cadastratar pessoas pelo seu nome e idade em um arquivo de texto simple.
 
-num = 0
+# O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas.
 
-while True:
-    try:
-        num        
+import pandas as pd
+
+dic = {'Nome':['Pedro'],'Idade':[1]}
