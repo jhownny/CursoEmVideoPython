@@ -12,7 +12,7 @@ def escolha(num):
             print('\033[1;31mPor Favor digite um valor valido sugerido acima\033[m')
             continue
         except KeyboardInterrupt:
-            print(f'\033[1;31m\nVocê não digitou ou deixou em branco!\033[m')
+            print('\033[1;31m\nVocê não digitou ou deixou em branco!\033[m')
             return 3
         else:
             if n == 1 or n == 2 or n == 3:

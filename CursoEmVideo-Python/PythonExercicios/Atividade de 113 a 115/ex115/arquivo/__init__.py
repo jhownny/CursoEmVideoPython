@@ -24,6 +24,7 @@ def lerarquivo(nome):
     except:
         print('erro')
     else:
-        print('')
+        print(a.read())
     
-    
+
+

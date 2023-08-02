@@ -3,7 +3,7 @@ from persona import *
 from arquivo import *
 from time import sleep
 
-arq = "CursoEmVideo-Python\PythonExercicios\Atividade de 113 a 115\ex115\oarquivo.txt"
+arq = "CursoEmVideo-Python/PythonExercicios/Atividade de 113 a 115/ex115/oarquivo.txt"
 
 if not arquivoexiste(arq):
     criararquivo(arq)
@@ -19,16 +19,18 @@ while True:
     print('\033[;33m3 -\033[m \033[;34mSair do Sistema\033[m')
 
     linhazinha()
-    es = escolha(LetraCor('Digite: ',10,9))
+    es = escolha('Digite: ')
 
     if es == 1:
-        print('Lista')
+        lerarquivo(arq)
     elif es == 2:
-        print('nova pessoa')
+        adicionar(arq)
     elif es == 3:
         break
     sleep(2)
-            
+
+
+
     #if escolha == 1:
     #elif escolha == 2:
     #elif escolha == 3:
