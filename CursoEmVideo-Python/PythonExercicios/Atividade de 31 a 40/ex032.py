@@ -7,4 +7,4 @@ ano = int(input('Me diga o ano: '))
 if ano % 4 == 0:
     print(f'{ano} é um ano BISSEXTO.')
 else:
-    print(f'{ano} não é umm ano BISSEXTO.')
+    print(f'{ano} não é um ano BISSEXTO.')

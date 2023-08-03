@@ -5,8 +5,6 @@
 # Em que posição ela aparece a primeira vez.
 # Em que posição ela aparece a última vez.
 
-print('não fiz, não achei a solução para esse exercicio nas funções apresentadas. Resolução do codigo a baixo:\n')
-
 frase = str(input('Digite uma frase: ')).upper().strip()
 
 print(f'A letra A aparece {frase.count("A")} vezes na frase.')

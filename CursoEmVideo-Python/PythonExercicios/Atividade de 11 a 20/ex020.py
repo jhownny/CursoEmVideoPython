@@ -5,6 +5,6 @@
 
 import random
 
-cha = random.sample(['João','Pedro','Geovana','Cladio'], k=4)
+aluno = random.sample(['João','Pedro','Geovana','Cladio'], k=4)
 
-print(cha)
+print(aluno)

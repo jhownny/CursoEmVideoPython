@@ -8,7 +8,7 @@ r = int(input('Digite a Reação: '))
 m = an + (10-1)*r
 
 for c in range(an, m, r):
-    print('{} '.format(c), end='→')
+    print(f'{c} ', end='→ ')
 
 print(' Final')
 

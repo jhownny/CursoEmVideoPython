@@ -6,4 +6,4 @@
 import math
 nun = float(input('digite um numero: '))
 
-print(f'O numero{nun} tem a parte inteira {math.ceil(nun)}')
+print(f'O número {nun} tem como parte inteira {math.ceil(nun)}')

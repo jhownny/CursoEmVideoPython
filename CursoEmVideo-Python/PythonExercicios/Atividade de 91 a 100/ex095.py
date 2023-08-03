@@ -31,12 +31,5 @@ while True:
         break
     
 print(jogadores)
+
 # Ultimo exercicio do capitulo 19
-
-
-#
-#
-#
-#
-#
-#

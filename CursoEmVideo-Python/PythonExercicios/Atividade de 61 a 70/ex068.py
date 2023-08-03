@@ -21,7 +21,7 @@ else:
 while True:
 
     if ParImpar == "PAR":
-        n_jogador = int(input(f'Escolha um número: '))
+        n_jogador = int(input('Escolha um número: '))
         n_computer = random.randrange(1 , 100)
         nun_final = n_jogador + n_computer
         if nun_final % 2 == 0:
@@ -32,7 +32,7 @@ while True:
             break
     elif ParImpar == "IMPAR":     
 
-        n_jogador = int(input(f'Escolha um número: '))
+        n_jogador = int(input('Escolha um número: '))
         n_computer = random.randrange(1 , 100)
         nun_final = n_jogador + n_computer
         if nun_final % 2 == 0:

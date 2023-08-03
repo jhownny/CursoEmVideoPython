@@ -9,4 +9,4 @@ for c in range(1, 7):
     if num % 2 == 0:
         soma += num
         cont += 1
-print(f'Você informou {cont} números e a soma  foi {soma}. ')
+print(f'Você informou {cont} números e a soma deu: {soma}. ')

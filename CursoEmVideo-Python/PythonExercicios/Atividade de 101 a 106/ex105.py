@@ -29,7 +29,7 @@ def notas():
     - A Quantidade de notas inseridas.
     """
     
-    global maior_nota,menor_nota,media,cont
+    global maior_nota, menor_nota, media,cont
     while True:
         n = float(input(f'Digite a nota do {cont}° aluno: '))
         l.append(n) 

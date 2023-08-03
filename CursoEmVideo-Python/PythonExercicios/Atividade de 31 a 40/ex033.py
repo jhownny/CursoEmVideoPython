@@ -2,7 +2,7 @@
 # que leia três números e mostre
 # qual é o maior e qual é o menor.
 
-num1 = int(input('me diga 3 numeros:'))
+num1 = int(input('Me diga 3 numeros:'))
 num2 = int(input(':'))
 num3 = int(input(':'))
 
@@ -18,6 +18,7 @@ elif num1 > num3 > num2:
     print(f'a ordem de procedencia do maior para o menor é {num1}, {num3}, {num2}.')
 elif num3 > num2 > num1:
     print(f'a ordem de procedencia do maior para o menor é {num3}, {num2}, {num1}.')
+
 
 # Resolução proposta pelo guanabara:
 a = int(input('Primeiro valor: '))

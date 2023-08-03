@@ -7,7 +7,7 @@
 #
 # Para os inferiores ou iguais, o aumento é de 15%.
 
-salario = float(input('Me diga seu salario, meu nobre\n:'))
+salario = float(input('Me diga seu salario, meu nobre: R$'))
 
 if salario > 1.250:
     va = (salario * 0.10)

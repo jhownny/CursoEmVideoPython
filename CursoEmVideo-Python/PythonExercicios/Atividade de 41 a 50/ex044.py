@@ -25,7 +25,7 @@ elif pagamento == 3:
     print(f'\nO seu produto em até 2X no cartão fica: R${valor / 2:.2f } por dois meses.')
 
 elif pagamento == 4:
-    parcelas = int(input(f'\nEm quanto pretende parcelar?\n:'))
+    parcelas = int(input('\nEm quanto pretende parcelar?\n: '))
     resultado = valor + (valor * 0.20)
     if parcelas <= 2:
         print(f'parcelas menores que 3x não pagam juros então você pagará: R${valor / 2:.2f} por 2 meses')

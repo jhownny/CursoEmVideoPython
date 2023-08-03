@@ -16,15 +16,15 @@ if (reta1 + reta2) > reta3 and (reta1 + reta3) > reta2 and (reta2 + reta3) > ret
 
     # Caso todos os lados sejam iguais, apresenta a mensagem.
     if reta1 == reta2 and reta2 == reta3 and reta3 == reta1:
-        print(f'É um \033[1;35mTriângulo Equilatero\033[m!')
+        print('É um \033[1;35mTriângulo Equilatero\033[m!')
 
     # Caso somente dois lados digitados sejam iguais, apresenta a mensagem.
     elif reta1 == reta2 != reta3 or reta3 == reta2 != reta1 or reta1 == reta3 != reta2:
-        print(f'É um \033[1;34mTriângulo Isósceles\033[m!')
+        print('É um \033[1;34mTriângulo Isósceles\033[m!')
 
     # Caso todos os lados digitados sejam diferentes apresenta, a mensagem.
     elif reta1 != reta2 != reta3 != reta2 != reta3 != reta1:
-        print(f'É um \033[1;33mTriângulo Escaleno\033[m!')
+        print('É um \033[1;33mTriângulo Escaleno\033[m!')
 
 # Caso não de certo apresenta a mensagem
 else:

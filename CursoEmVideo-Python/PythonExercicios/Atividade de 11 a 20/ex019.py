@@ -7,6 +7,6 @@ import random
 
 nomes1 = 'João','Pedro','Geovana','Cladio'
 
-cha = random.choice(nomes1)
+aluno = random.choice(nomes1)
 
-print(cha)
+print(aluno)

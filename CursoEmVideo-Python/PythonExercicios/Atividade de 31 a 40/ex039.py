@@ -19,4 +19,4 @@ if idade >= 19:
 elif idade <= 17:
     print(f'Você ainda vai se alistar! Falta {(idade+18)-18} anos para você se alistar.')
 else:
-    print(f'Parece que você já pode se alistar.')
+    print('Parece que você já pode se alistar!')

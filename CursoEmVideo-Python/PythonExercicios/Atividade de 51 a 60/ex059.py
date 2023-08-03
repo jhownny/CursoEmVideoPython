@@ -15,9 +15,9 @@ n2 = int(input('Digite o segundo número: '))
 menu = 0
 
 while menu != 5:
-    menu = int(input('\n[1] somar'
-                     '\n[2] multiplicar'
-                     '\n[3] maior'
+    menu = int(input('\n\033[1;31m[1] somar'
+                     '\n\033[1;32m[2] multiplicar'
+                     '\n\033[1;31m[3] maior'
                      '\n[4] novos números'
                      '\n[5] sair do programa'
                      '\nDigite a operação desejada:'))

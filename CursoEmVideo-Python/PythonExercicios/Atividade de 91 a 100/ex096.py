@@ -3,7 +3,8 @@
 # retangular{largura e comprimento} e mostre a área do terreno.
 
 def area(l,c):
-    print(f'O retangulo com {l} metros de LARGURA, e {c} metros de COMPRIMENTO, tem no total uma área de {l*c}m² !')
+    print(f'O retangulo com {l} metros de LARGURA, e {c} metros de'
+          f' COMPRIMENTO, tem no total uma área de {l*c}m² !')
 
 
 area(5,8)

@@ -2,7 +2,7 @@
 # que leia o preço de um produto
 # e mostre seu novo preço, com 5% de Desconto.
 
-p = float(input('qual o preço do produto? '))
+p = float(input('Digite o preço do produto: '))
 vd = (p*0.05)
 vf = (p-vd)
 

@@ -1,6 +1,6 @@
-# Desafio 006 - Crie um algoritimo que
+# Desafio 006 - Crie um algoritmo que
 # leia um número e mostre o seu
-# dobro triplo e raiz quadrada.
+# dobro, triplo e raiz quadrada.
 
 n = int(input('diga me um numero, meu cumpade:'))
 

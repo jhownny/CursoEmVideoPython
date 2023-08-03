@@ -12,7 +12,7 @@ print('Olá, Bem vindo ao programa de soma.')
 while saida != 'N': 
 
     for i in range(10):
-        n1 = int(input(f'Digite o numero para a soma: '))
+        n1 = int(input('Digite o numero para a soma: '))
         soma.append(n1)
     saida = str(input('Deseja Continuar Inserindo Numeros? (S/N): ')).upper()
 

@@ -8,7 +8,7 @@ from persona import *
 def ArqExiste(nome):
     
     """
-    ArqExiste -> Verifica a existencia do arquivo.
+    ArqExiste → Verifica a existencia do arquivo.
     
     Parâmetros:
         - Caminho do arquivo
@@ -31,7 +31,7 @@ def ArqExiste(nome):
 def CriarArq(nome):
     
     """
-    CriarArq -> Cria um arquivo.
+    CriarArq → Cria um arquivo.
     
     Parâmetros:
         - Caminho do arquivo a ser adicionado    
@@ -54,7 +54,7 @@ def CriarArq(nome):
 def LerArq(nome):
     
     """
-    LerArq -> ler um arquivo.
+    LerArq → ler um arquivo.
     
     Parâmetros:
         - Caminho do arquivo a ser lido   
@@ -84,7 +84,7 @@ def LerArq(nome):
 def cadastrar(arq, nome='desconhecido', idade= 0):
     
     """
-    CADASTRAR -> Cadastrar pessoas.
+    CADASTRAR → Cadastrar pessoas.
     
     Parâmetros:
         - Caminho do arquivo a que será inserido o cadastro.  
