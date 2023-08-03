@@ -1,6 +1,24 @@
+# Desafio 115 - Crie um pequeno sistema modularizado que permita 
+# cadastratar pessoas pelo seu nome e idade em um arquivo de texto simple.
+
+# O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas.
+
 from persona import *
 
-def arquivoexiste(nome):
+def ArqExiste(nome):
+    
+    """
+    ArqExiste -> Verifica a existencia do arquivo.
+    
+    Parâmetros:
+        - Caminho do arquivo
+        
+    Retorna:
+        - Retornara True caso o arquivo exista.
+        - Retornara Falso caso o arquivo não exista.
+        
+    """
+    
     try:
         a = open(nome, 'rt')
         a.close()
@@ -10,7 +28,20 @@ def arquivoexiste(nome):
         return True
     
     
-def criararquivo(nome):
+def CriarArq(nome):
+    
+    """
+    CriarArq -> Cria um arquivo.
+    
+    Parâmetros:
+        - Caminho do arquivo a ser adicionado    
+
+    Retorna:
+        - Retorna mensagem de sucesso caso consiga criar o arquivo.
+        - Retorna mensagem de erro caso não consiga criar o arquivo.
+        
+    """
+    
     try:
         a = open(nome, 'wt+')
         a.close()
@@ -20,7 +51,20 @@ def criararquivo(nome):
         print(f'Aquivo {nome} criado com sucesso!')
         
 
-def lerarquivo(nome):
+def LerArq(nome):
+    
+    """
+    LerArq -> ler um arquivo.
+    
+    Parâmetros:
+        - Caminho do arquivo a ser lido   
+
+    Retorna:
+        - Retorna mensagem de sucesso caso consiga criar o arquivo.
+        - Retorna mensagem de erro caso não consiga criar o arquivo.
+        
+    """
+    
     try:
         a = open(nome, 'rt')
     except:
@@ -38,6 +82,21 @@ def lerarquivo(nome):
     
 
 def cadastrar(arq, nome='desconhecido', idade= 0):
+    
+    """
+    CADASTRAR -> Cadastrar pessoas.
+    
+    Parâmetros:
+        - Caminho do arquivo a que será inserido o cadastro.  
+        - Nome a ser cadastrado.
+        - Idade a ser cadastrada.
+
+    Retorna:
+        - Retorna mensagem de sucesso caso consiga cadastrar.
+        - Retorna mensagem de erro caso não consiga cadastrar.
+        
+    """
+    
     try:
         a = open(arq,'at')
     except:

@@ -5,7 +5,7 @@
 def LeiaInt(msg):
     
     """
-    LEIAINT -> Requere ao usuario a colocação de qualquer valor, mas só será aceito o valor que for numerico do tipo Int.
+    LeiaInt -> Requere ao usuario a colocação de qualquer valor, mas só será aceito o valor que for numerico do tipo Int.
 
     Parâmetros:
         - Colocação de qualquer elemento, mas apenas será permitido aquele que for numerico do tipo Int.
@@ -13,6 +13,7 @@ def LeiaInt(msg):
     Retorna:
         - Retornara o valor que for numerico do tipo Int;
         - mensagem de erro exigindo correção.
+        
     """
 
     while True:
@@ -31,7 +32,7 @@ def LeiaInt(msg):
 def LeiaFloat(msg):
 
     """
-    LEIAFLOAT -> Requere ao usuario a colocação de qualquer valor, mas só será aceito o valor que for numerico do tipo Float.
+    LeiaFloat -> Requere ao usuario a colocação de qualquer valor, mas só será aceito o valor que for numerico do tipo Float.
 
     Parâmetros:
         - Colocação de qualquer elemento, mas apenas será permitido aquele que for numerico do tipo Float.
@@ -39,6 +40,7 @@ def LeiaFloat(msg):
     Retorna:
         - Retornara o valor que for numerico do tipo Float;
         - mensagem de erro exigindo correção.
+        
     """
 
     while True:

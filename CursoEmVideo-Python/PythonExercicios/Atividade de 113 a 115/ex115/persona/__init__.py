@@ -1,12 +1,7 @@
 # Desafio 115 - Ccrie um pequeno sistema modularizado que permita 
 # cadastratar pessoas pelo seu nome e idade em um arquivo de texto simple.
 
-# O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas.
-
-def linhazinha():
-
-    print('-' * 30)
-    
+# O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas.   
 
 def LetraCor(texto, cor, est):
     
@@ -131,4 +126,7 @@ def LetraCor(texto, cor, est):
         else:
             print(f'\033[0m{texto}\033[m')
  
-    
+   
+def linhazinha():
+
+    print('-' * 30) 

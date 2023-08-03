@@ -5,8 +5,8 @@ from time import sleep
 
 arq = "CursoEmVideo-Python/PythonExercicios/Atividade de 113 a 115/ex115/oarquivo.txt"
 
-if not arquivoexiste(arq):
-    criararquivo(arq)
+if not ArqExiste(arq):
+    CriarArq(arq)
 
 while True:
 
@@ -22,7 +22,7 @@ while True:
     ecla = escolha('\033[1;35mDigite a operação desejada:\033[m ')
 
     if ecla == 1:
-        lerarquivo(arq)
+        LerArq(arq)
     elif ecla == 2:
         linhazinha()
         LetraCor('      NOVO CADASTRO',3,1)

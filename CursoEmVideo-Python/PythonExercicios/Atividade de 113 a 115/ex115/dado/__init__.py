@@ -1,9 +1,21 @@
-# Desafio 115 - Ccrie um pequeno sistema modularizado que permita 
+# Desafio 115 - Crie um pequeno sistema modularizado que permita 
 # cadastratar pessoas pelo seu nome e idade em um arquivo de texto simple.
 
 # O sistema só vai ter 2 opções: cadastrar uma nova pessoa e listar todas as pessoas cadastradas.
 
 def escolha(num):
+    
+    """
+    ESCOLHA -> Requere ao usuario a colocação de qualquer valor, mas só será aceito o valor 1,2 e 3 para as devidas respostas.
+    
+    Parâmetros:
+        - Colocação de Números para entrega das escolhas aceitanto apenas o numero 1,2 e 3 senão ocorrera o loop.
+        
+    Retorna:
+        - Retornara o valor caso o número inserido seja igual a 1, 2 e 3.
+        - mensagem de erro exigindo correção caso o número inserido seja diferente de 1, 2 e 3.
+        
+   """
     
     while True:
         try: 
@@ -25,7 +37,7 @@ def escolha(num):
 def LeiaInt(msg):
     
     """
-    LEIAINT -> Requere ao usuario a colocação de qualquer valor, mas só será aceito o valor que for numerico do tipo Int.
+    LeiaInt -> Requere ao usuario a colocação de qualquer valor, mas só será aceito o valor que for numerico do tipo Int.
 
     Parâmetros:
         - Colocação de qualquer elemento, mas apenas será permitido aquele que for numerico do tipo Int.
@@ -33,6 +45,7 @@ def LeiaInt(msg):
     Retorna:
         - Retornara o valor que for numerico do tipo Int;
         - mensagem de erro exigindo correção.
+        
     """
 
     while True:
