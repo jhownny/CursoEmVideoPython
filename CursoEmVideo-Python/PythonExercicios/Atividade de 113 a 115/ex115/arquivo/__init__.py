@@ -103,9 +103,9 @@ def cadastrar(arq, nome='desconhecido', idade= 0):
         print('Ocorreu um erro na abertura do aquivo!')
     else:
         try:
-            a.write(f'{nome};{idade}')
+            a.write(f'{nome.title()};{idade}')
         except:
             print('Ocorreu um erro na escritura do arquivo!')
         else:
-            print(f'Novo registro de {nome} adicionado.')
+            print(f'Novo registro de {nome} adicionado.\n')
             a.close()

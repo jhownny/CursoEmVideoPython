@@ -3,7 +3,7 @@ from persona import *
 from arquivo import *
 from time import sleep
 
-arq = "CursoEmVideo-Python/PythonExercicios/Atividade de 113 a 115/ex115/oarquivo.txt"
+arq = "CursoEmVideo-Python/PythonExercicios/Atividade de 113 a 115/ex115/Cadastros.txt"
 
 if not ArqExiste(arq):
     CriarArq(arq)
@@ -27,11 +27,11 @@ while True:
         linhazinha()
         LetraCor('      NOVO CADASTRO',3,1)
         linhazinha()
-        nome = str(input('Nome: '))
+        nome = str(input('\nNome: '))
         idade = LeiaInt('Idade: ')
         cadastrar(arq, nome, idade)
     elif ecla == 3:
-        LetraCor('Até breve...',7,1)
+        LetraCor('\nAté breve...\n',7,1)
         break
     sleep(2)
 
