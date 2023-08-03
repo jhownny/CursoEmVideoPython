@@ -1,4 +1,4 @@
-from ex113 import LeiaFloat,LeiaInt
+from dados import LeiaFloat,LeiaInt
 
 num = LeiaInt('Digite um valor: ')
 print(f'O valor digitado foi {num}')

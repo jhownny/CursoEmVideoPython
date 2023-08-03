@@ -15,5 +15,8 @@
         "./CursoEmVideo-Python",
         "-p",
         "*test.py"
+    ],
+    "python.analysis.extraPaths": [
+        "./CursoEmVideo-Python/PythonExercicios/Atividade de 113 a 115/ex113"
     ]
 }

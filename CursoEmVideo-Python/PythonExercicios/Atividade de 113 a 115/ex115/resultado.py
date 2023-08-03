@@ -11,7 +11,7 @@ if not arquivoexiste(arq):
 while True:
 
     linhazinha()
-    LetraCor('      MENU PRINCIPAL',3,0)
+    LetraCor('      MENU PRINCIPAL',3,1)
     linhazinha()
 
     print('\033[;33m1 -\033[m \033[;34mVer Pessoas Cadastradas\033[m')
@@ -19,22 +19,19 @@ while True:
     print('\033[;33m3 -\033[m \033[;34mSair do Sistema\033[m')
 
     linhazinha()
-    es = escolha('Digite: ')
+    ecla = escolha('\033[1;35mDigite a operação desejada:\033[m ')
 
-    if es == 1:
+    if ecla == 1:
         lerarquivo(arq)
-    elif es == 2:
-        adicionar(arq)
-    elif es == 3:
+    elif ecla == 2:
+        linhazinha()
+        LetraCor('      NOVO CADASTRO',3,1)
+        linhazinha()
+        nome = str(input('Nome: '))
+        idade = LeiaInt('Idade: ')
+        cadastrar(arq, nome, idade)
+    elif ecla == 3:
+        LetraCor('Até breve...',7,1)
         break
     sleep(2)
-
-
-
-    #if escolha == 1:
-    #elif escolha == 2:
-    #elif escolha == 3:
-    #    break
-
-
 
