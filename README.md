@@ -1,3 +1,7 @@
-# CursoEmVideoPython
+<div align = 'center'>
  
-Repositorio criado com o objetivo de consultar e demontrar meu desenvolvimento em linguagem python.
+ # CursoEmVideoPython
+ 
+ Repositorio criado com o objetivo de consultar e demontrar meu desenvolvimento em linguagem python.
+</div>
+
