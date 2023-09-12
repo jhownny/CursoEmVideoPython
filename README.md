@@ -2,6 +2,6 @@
  
  # CursoEmVideoPython
  
- Repositorio criado com o objetivo de consultar e demontrar meu desenvolvimento em linguagem python.
+ Repositorio criado com o objetivo de consultar e demonstrar meu desenvolvimento em linguagem python.
 </div>
 
